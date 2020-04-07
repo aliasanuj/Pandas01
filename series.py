@@ -1,14 +1,10 @@
+data --- data takes various forms like ndarray, list, constants
 
-data  -- data takes various forms like ndarray, series, map, lists, dict, constants and also another DataFrame.
+index --- Index values must be unique and hashable, same length as data. Default np.arrange(n) if no index is passed.
 
-index  -- For the row labels, the Index to be used for the resulting frame is Optional Default np.arange(n) if no index is passed.
+dtype  --- dtype is for data type. If None, data type will be inferred
 
-columns -- For column labels, the optional default syntax is - np.arange(n). This is only true if no index is passed.
-
-dtype -- Data type of each column.
-	
-copy -- This command (or whatever it is) is used for copying of data, if the default is False.
-
+copy --- Copy data. Default False
 
 #import the pandas library and aliasing as pd
 # import pandas as pd
