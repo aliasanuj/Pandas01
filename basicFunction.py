@@ -131,15 +131,270 @@ tail() == Returns the last n rows.
 
 =================================================
 
-DataFrame:
-T == Transposes rows and columns.
-axes == Returns a list with the row axis labels and column axis labels as the only members.
-dtypes == Returns the dtypes in this object.
-empty == True if NDFrame is entirely empty [no items]; if any of the axes are of length 0.
-ndim == Number of axes / array dimensions.
-shape == Returns a tuple representing the dimensionality of the DataFrame.
-size == Number of elements in the NDFrame.
-values == Numpy representation of NDFrame.
-head() == Returns the first n rows.
-tail() == Returns last n rows.
+# DataFrame:
+# T == Transposes rows and columns.
+# axes == Returns a list with the row axis labels and column axis labels as the only members.
+# dtypes == Returns the dtypes in this object.
+# empty == True if NDFrame is entirely empty [no items]; if any of the axes are of length 0.
+# ndim == Number of axes / array dimensions.
+# shape == Returns a tuple representing the dimensionality of the DataFrame.
+# size == Number of elements in the NDFrame.
+# values == Numpy representation of NDFrame.
+# head() == Returns the first n rows.
+# tail() == Returns last n rows.
+
+# import pandas as pd
+# import numpy as np
+# #Create a Dictionary of series
+# d = {'Name':pd.Series(['Tom','James','Ricky','Vin','Steve','Smith','Jack']),
+#    'Age':pd.Series([25,26,25,23,30,29,23]),
+#    'Rating':pd.Series([4.23,3.24,3.98,2.56,3.20,4.6,3.8,14])}
+# #Create a DataFrame
+# df = pd.DataFrame(d)
+# print ("Our data series is:")
+# print (df)
+# Our data series is:
+#     Name   Age  Rating
+# 0    Tom  25.0    4.23
+# 1  James  26.0    3.24
+# 2  Ricky  25.0    3.98
+# 3    Vin  23.0    2.56
+# 4  Steve  30.0    3.20
+# 5  Smith  29.0    4.60
+# 6   Jack  23.0    3.80
+# 7    NaN   NaN   14.00
+
+
+
+# import pandas as pd
+# import numpy as np
+# #Create a Dictionary of series
+# d = {'Name':pd.Series(['Tom','James','Ricky','Vin','Steve','Smith','Jack']),
+#    'Age':pd.Series([25,26,25,23,30,29,23]),
+#    'Rating':pd.Series([4.23,3.24,3.98,2.56,3.20,4.6,3.8,14])}
+# #Create a DataFrame
+# df = pd.DataFrame(d)
+# print ("Our data series is:")
+# print (df.T)
+# Our data series is:
+#            0      1      2     3      4      5     6    7
+# Name     Tom  James  Ricky   Vin  Steve  Smith  Jack  NaN
+# Age       25     26     25    23     30     29    23  NaN
+# Rating  4.23   3.24   3.98  2.56    3.2    4.6   3.8   14
+#
+
+
+
+# import pandas as pd
+# import numpy as np
+# #Create a Dictionary of series
+# d = {'Name':pd.Series(['Tom','James','Ricky','Vin','Steve','Smith','Jack']),
+#    'Age':pd.Series([25,26,25,23,30,29,23]),
+#    'Rating':pd.Series([4.23,3.24,3.98,2.56,3.20,4.6,3.8])}
+# #Create a DataFrame
+# df = pd.DataFrame(d)
+# print ("Row axis labels and column axis labels are:")
+# print(df.axes)
+# Row axis labels and column axis labels are:
+# [RangeIndex(start=0, stop=7, step=1), Index(['Name', 'Age', 'Rating'], dtype='object')]
+#
+
+
+
+
+# import pandas as pd
+# import numpy as np
+# #Create a Dictionary of series
+# d = {'Name':pd.Series(['Tom','James','Ricky','Vin','Steve','Smith','Jack']),
+#    'Age':pd.Series([25,26,25,23,30,29,23]),
+#    'Rating':pd.Series([4.23,3.24,3.98,2.56,3.20,4.6,3.8])}
+# #Create a DataFrame
+# df = pd.DataFrame(d)
+# print ("The data types of each column are:")
+# print(df.dtypes)
+# The data types of each column are:
+# Name       object
+# Age         int64
+# Rating    float64
+# dtype: object
+
+
+# import pandas as pd
+# import numpy as np
+# # Create a Dictionary of series
+# d = {'Name': pd.Series(['Tom', 'James', 'Ricky', 'Vin', 'Steve', 'Smith', 'Jack']),
+#      'Age': pd.Series([25, 26, 25, 23, 30, 29, 23]),
+#      'Rating': pd.Series([4.23, 3.24, 3.98, 2.56, 3.20, 4.6, 3.8])}
+# # Create a DataFrame
+# df = pd.DataFrame(d)
+# print("Is the object empty?")
+# print(df.empty)
+# Is the object empty?
+# False
+
+
+# import pandas as pd
+# import numpy as np
+# #Create a Dictionary of series
+# d = {'Name':pd.Series(['Tom','James','Ricky','Vin','Steve','Smith','Jack']),
+#    'Age':pd.Series([25,26,25,23,30,29,23]),
+#    'Rating':pd.Series([4.23,3.24,3.98,2.56,3.20,4.6,3.8])}
+# #Create a DataFrame
+# df = pd.DataFrame(d)
+# print ("Our object is:")
+# print(df)
+# print ("The dimension of the object is:")
+# print(df.ndim)
+# Our object is:
+#     Name  Age  Rating
+# 0    Tom   25    4.23
+# 1  James   26    3.24
+# 2  Ricky   25    3.98
+# 3    Vin   23    2.56
+# 4  Steve   30    3.20
+# 5  Smith   29    4.60
+# 6   Jack   23    3.80
+# The dimension of the object is:
+# 2
+
+
+# import pandas as pd
+# import numpy as np
+# # Create a Dictionary of series
+# d = {'Name': pd.Series(['Tom', 'James', 'Ricky', 'Vin', 'Steve', 'Smith', 'Jack']),
+#      'Age': pd.Series([25, 26, 25, 23, 30, 29, 23]),
+#      'Rating': pd.Series([4.23, 3.24, 3.98, 2.56, 3.20, 4.6, 3.8])}
+# # Create a DataFrame
+# df = pd.DataFrame(d)
+# print("Our object is:")
+# print(df)
+# print("The shape of the object is:")
+# print(df.shape)
+# Our object is:
+#     Name  Age  Rating
+# 0    Tom   25    4.23
+# 1  James   26    3.24
+# 2  Ricky   25    3.98
+# 3    Vin   23    2.56
+# 4  Steve   30    3.20
+# 5  Smith   29    4.60
+# 6   Jack   23    3.80
+# The shape of the object is:
+# (7, 3)
+
+
+# import pandas as pd
+# import numpy as np
+# # Create a Dictionary of series
+# d = {'Name': pd.Series(['Tom', 'James', 'Ricky', 'Vin', 'Steve', 'Smith', 'Jack']),
+#      'Age': pd.Series([25, 26, 25, 23, 30, 29, 23]),
+#      'Rating': pd.Series([4.23, 3.24, 3.98, 2.56, 3.20, 4.6, 3.8])}
+# # Create a DataFrame
+# df = pd.DataFrame(d)
+# print("Our object is:")
+# print(df)
+# print("The total number of elements in our object is:")
+# print(df.size)
+# Our object is:
+#     Name  Age  Rating
+# 0    Tom   25    4.23
+# 1  James   26    3.24
+# 2  Ricky   25    3.98
+# 3    Vin   23    2.56
+# 4  Steve   30    3.20
+# 5  Smith   29    4.60
+# 6   Jack   23    3.80
+# The total number of elements in our object is:
+# 21
+
+
+# import pandas as pd
+# import numpy as np
+# # Create a Dictionary of series
+# d = {'Name': pd.Series(['Tom', 'James', 'Ricky', 'Vin', 'Steve', 'Smith', 'Jack']),
+#      'Age': pd.Series([25, 26, 25, 23, 30, 29, 23]),
+#      'Rating': pd.Series([4.23, 3.24, 3.98, 2.56, 3.20, 4.6, 3.8])}
+# # Create a DataFrame
+# df = pd.DataFrame(d)
+# print("Our object is:")
+# print(df)
+# print("The actual data in our data frame is:")
+# print(df.values)
+# Our object is:
+#     Name  Age  Rating
+# 0    Tom   25    4.23
+# 1  James   26    3.24
+# 2  Ricky   25    3.98
+# 3    Vin   23    2.56
+# 4  Steve   30    3.20
+# 5  Smith   29    4.60
+# 6   Jack   23    3.80
+# The actual data in our data frame is:
+# [['Tom' 25 4.23]
+#  ['James' 26 3.24]
+#  ['Ricky' 25 3.98]
+#  ['Vin' 23 2.56]
+#  ['Steve' 30 3.2]
+#  ['Smith' 29 4.6]
+#  ['Jack' 23 3.8]]
+#
+#
+#
+
+
+# import pandas as pd
+# import numpy as np
+# # Create a Dictionary of series
+# d = {'Name': pd.Series(['Tom', 'James', 'Ricky', 'Vin', 'Steve', 'Smith', 'Jack']),
+#      'Age': pd.Series([25, 26, 25, 23, 30, 29, 23]),
+#      'Rating': pd.Series([4.23, 3.24, 3.98, 2.56, 3.20, 4.6, 3.8])}
+#
+# # Create a DataFrame
+# df = pd.DataFrame(d)
+# print("Our data frame is:")
+# print(df)
+# print("The first two rows of the data frame is:")
+# print(df.head(2))
+# Our data frame is:
+#     Name  Age  Rating
+# 0    Tom   25    4.23
+# 1  James   26    3.24
+# 2  Ricky   25    3.98
+# 3    Vin   23    2.56
+# 4  Steve   30    3.20
+# 5  Smith   29    4.60
+# 6   Jack   23    3.80
+# The first two rows of the data frame is:
+#     Name  Age  Rating
+# 0    Tom   25    4.23
+# 1  James   26    3.24
+
+
+# import pandas as pd
+# import numpy as np
+# # Create a Dictionary of series
+# d = {'Name': pd.Series(['Tom', 'James', 'Ricky', 'Vin', 'Steve', 'Smith', 'Jack']),
+#      'Age': pd.Series([25, 26, 25, 23, 30, 29, 23]),
+#      'Rating': pd.Series([4.23, 3.24, 3.98, 2.56, 3.20, 4.6, 3.8])}
+# # Create a DataFrame
+# df = pd.DataFrame(d)
+# print("Our data frame is:")
+# print(df)
+# print("The last two rows of the data frame is:")
+# print(df.tail(2))
+# Our data frame is:
+#     Name  Age  Rating
+# 0    Tom   25    4.23
+# 1  James   26    3.24
+# 2  Ricky   25    3.98
+# 3    Vin   23    2.56
+# 4  Steve   30    3.20
+# 5  Smith   29    4.60
+# 6   Jack   23    3.80
+# The last two rows of the data frame is:
+#     Name  Age  Rating
+# 5  Smith   29     4.6
+# 6   Jack   23     3.8
+
+
 
