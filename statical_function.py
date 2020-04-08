@@ -1,0 +1,13 @@
+#statical_function.py
+
+
+
+
+
+
+
+
+
+
+
+
