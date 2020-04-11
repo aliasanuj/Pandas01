@@ -8,7 +8,7 @@
 
 
 
-
+mcvsdhcvdhjgbdckdsbfs
 ###########################################################333
 # Create DataFrame
 # A pandas DataFrame can be created using various inputs like −
@@ -60,6 +60,8 @@
 # 7  6
 
 
+
+###########################################################333
 # import pandas as pd
 # data = ["a","b","c","d","e"]
 # df = pd.DataFrame(data)
@@ -72,6 +74,8 @@
 # 4  e
 
 
+
+###########################################################333
 # import pandas as pd
 # list1 = [["anuj",20],["anuj",21],["anuj",22]]
 # df = pd.DataFrame(list1,columns=["name","marks"])
@@ -82,6 +86,22 @@
 # 2  anuj     22
 
 
+
+
+
+###########################################################333
+# import pandas as pd
+# list1 = [["anuj",20],["anuj",21],["anuj",22]]
+# df = pd.DataFrame(list1)
+# print(df)
+#       0   1
+# 0  anuj  20
+# 1  anuj  21
+# 2  anuj  22
+
+
+
+###########################################################333
 # import pandas as pd
 # list1 = [["anuj",20],["anuj",21],["anuj",22]]
 # df = pd.DataFrame(list1)
