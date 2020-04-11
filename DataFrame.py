@@ -8,7 +8,6 @@
 
 
 
-aaaaaaaaaaaaaaaaaaaaaap anuj
 ###########################################################333
 # Create DataFrame
 # A pandas DataFrame can be created using various inputs like −
@@ -101,7 +100,7 @@ aaaaaaaaaaaaaaaaaaaaaap anuj
 
 
 
-###########################################################333
+###########################################################
 # import pandas as pd
 # list1 = [["anuj",20],["anuj",21],["anuj",22]]
 # df = pd.DataFrame(list1)

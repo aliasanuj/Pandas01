@@ -1,7 +1,11 @@
 #aggregations.py
 
 
-# import pandas as pd
+# import pandas as pdb jfbidfhdsk
+
+# import pandas as pdxcjvhdfighfdul
+
+
 # import numpy as np
 # data1 = {"marks":pd.Series([50,30,40,55,60,70,8,90]),
 #          "Age01" :pd.Series([55,84,24,68,74,21,54]),
@@ -20,7 +24,7 @@
 # 5   70.0   21.0     66   22.0
 # 6    8.0   54.0     77    4.0
 # 7   90.0    NaN     88    NaN
-# 8    NaN    NaN     99    NaN  
+# 8    NaN    NaN     99    NaN
 # 9    NaN    NaN    100    NaN
 # Rolling [window=2,min_periods=1,center=False,axis=0]
 
