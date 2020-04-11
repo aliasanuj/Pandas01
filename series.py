@@ -1,10 +1,11 @@
-data --- data takes various forms like ndarray, list, constants
+# data --- data takes various forms like ndarray, list, constants
+# index --- Index values must be unique and hashable, same length as data. Default np.arrange(n) if no index is passed.
+# dtype  --- dtype is for data type. If None, data type will be inferred
+# copy --- Copy data. Default False
 
-index --- Index values must be unique and hashable, same length as data. Default np.arrange(n) if no index is passed.
 
-dtype  --- dtype is for data type. If None, data type will be inferred
 
-copy --- Copy data. Default False
+
 
 #import the pandas library and aliasing as pd
 # import pandas as pd
@@ -17,7 +18,14 @@ copy --- Copy data. Default False
 # 2    c
 # 3    d
 # dtype: object
-###############################
+
+
+
+
+############################################################
+
+
+
 
 #import the pandas library and aliasing as pd
 # import pandas as pd
