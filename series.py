@@ -2,11 +2,9 @@
 # index --- Index values must be unique and hashable, same length as data. Default np.arrange(n) if no index is passed.
 # dtype  --- dtype is for data type. If None, data type will be inferred
 # copy --- Copy data. Default False
+#knkfdjnjfk
 
-
-
-
-
+############################################################
 #import the pandas library and aliasing as pd
 # import pandas as pd
 # import numpy as np
@@ -21,13 +19,7 @@
 
 
 
-
-#######################################   #####################
-
-
-
-
-
+############################################################
 #import the pandas library and aliasing as pd
 # import pandas as pd
 # import numpy as np
@@ -40,8 +32,19 @@
 # 5    d
 # dtype: object
 
-###################################
 
+
+############################################################
+# import pandas as pd
+# import numpy as np
+# data = np.array(['a','b','c','d'])
+# s = pd.Series(data,index=[2,3,4,5,6])
+# print (s)
+# ValueError: Length of passed values is 4, index implies 5.
+
+
+
+############################################################
 #import the pandas library and aliasing as pd
 # import pandas as pd
 # import numpy as np
@@ -54,23 +57,63 @@
 # c    2.0
 # dtype: float64
 
-##############################3
+############################################################
+#import the pandas library and aliasing as pd
+# import pandas as pd
+# import numpy as np
+# data = {'a' : 0, 'b' : 1, 'c' : 2,'x':" "}
+# s = pd.Series(data)
+# print(s)
+# a    0
+# b    1
+# c    2
+# x
+# dtype: object
 
+
+############################################################
+#import the pandas library and aliasing as pd
+# import pandas as pd
+# import numpy as np
+# data = {'a' : 0, 'b' : 1, 'c' : 2,'x':np.NAN}
+# s = pd.Series(data)
+# print(s)
+# a    0.0
+# b    1.0
+# c    2.0
+# x    NaN
+
+
+############################################################
 #import the pandas library and aliasing as pd
 # import pandas as pd
 # import numpy as np
 # data = {'a' : 0., 'b' : 1., 'c' : 2.}
 # s = pd.Series(data,index=['b','c','d','a'])
 # print (s)
-#
+# #
 # b    1.0
 # c    2.0
 # d    NaN
 # a    0.0
 # dtype: float64
 
-##################################
 
+
+##################################
+# import pandas as pd
+# import numpy as np
+# data = {'a' : 0., 'b' : 1., 'c' : 2.}
+# s = pd.Series(data,index=['b','c','d','a'])
+# print (s.fillna(111))
+# b      1.0
+# c      2.0
+# d    111.0
+# a      0.0
+# dtype: float64
+
+
+##################################
 #import the pandas library and aliasing as pd
 # import pandas as pd
 # import numpy as np
@@ -84,8 +127,6 @@
 # dtype: int64
 
 ##################################
-
-
 #import the pandas library and aliasing as pd
 # import pandas as pd
 # import numpy as np
@@ -110,6 +151,22 @@
 # dtype: int64
 
 ##################################
+
+
+# import pandas as pd
+# s = pd.Series([1,2,3,4,5],index = ['a','b','c','d','e'])
+# #retrieve the first element
+# print(s)
+# a    1
+# b    2
+# c    3
+# d    4
+# e    5
+# dtype: int64
+
+
+
+
 
 # import pandas as pd
 # s = pd.Series([1,2,3,4,5],index = ['a','b','c','d','e'])
