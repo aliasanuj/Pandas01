@@ -1,16 +1,15 @@
-data  -- data takes various forms like ndarray, series, map, lists, dict, constants and also another DataFrame.
-
-index  -- For the row labels, the Index to be used for the resulting frame is Optional Default np.arange(n) if no index is passed.
-
-columns -- For column labels, the optional default syntax is - np.arange(n). This is only true if no index is passed.
-
-dtype -- Data type of each column.
-	
-copy -- This command (or whatever it is) is used for copying of data, if the default is False.
+###########################################################333
+# data  -- data takes various forms like ndarray, series, map, lists, dict, constants and also another DataFrame.
+# index  -- For the row labels, the Index to be used for the resulting frame is Optional Default np.arange(n) if no index is passed.
+# columns -- For column labels, the optional default syntax is - np.arange(n). This is only true if no index is passed.
+# dtype -- Data type of each column.
+# copy -- This command (or whatever it is) is used for copying of data, if the default is False.
 
 
 
 
+
+###########################################################333
 # Create DataFrame
 # A pandas DataFrame can be created using various inputs like −
 #
@@ -20,8 +19,9 @@ copy -- This command (or whatever it is) is used for copying of data, if the def
 # Numpy ndarrays
 # Another DataFrame
 
-###############################
 
+
+###########################################################333
 # import pandas as pd
 # df = pd.DataFrame()
 # print(df)
@@ -29,6 +29,9 @@ copy -- This command (or whatever it is) is used for copying of data, if the def
 # Columns: []
 # Index: []
 
+
+
+###########################################################333
 # import pandas as pd
 # data = [1,2,3,4,5,6]
 # df = pd.DataFrame(data)
@@ -42,6 +45,8 @@ copy -- This command (or whatever it is) is used for copying of data, if the def
 # 5  6
 
 
+
+###########################################################333
 # import pandas as pd
 # data = [1,2,3,4,5,6]
 # df = pd.DataFrame(data,index=[7,7,7,7,7,7])
