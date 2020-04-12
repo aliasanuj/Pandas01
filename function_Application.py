@@ -1,13 +1,17 @@
+######################################################3
 #Function Application
-
 # Table wise Function Application: pipe()
 # Row or Column Wise Function Application: apply()
 # Element wise Function Application: applymap()
 
-
+######################################################3
 #Table-wise Function Application
+######################################################3
 
 
+
+
+######################################################3
 # import pandas as pd
 # import numpy as np
 # #Create a Dictionary of series
@@ -37,6 +41,69 @@
 # 5   34     NaN
 
 
+
+
+######################################################3
+# import pandas as pd
+# import numpy as np
+# #Create a Dictionary of series
+# d = {
+#    'Age':pd.Series([25,26,25,23,30,29]),
+#    'Rating':pd.Series([4.23,3.24,3.98,2.56,3.20])
+# }
+# #Create a DataFrame
+# df = pd.DataFrame(d)
+# print(df.apply(np.mean))
+# Age       26.333333
+# Rating     3.442000
+# dtype: float64
+
+
+
+
+######################################################3
+# import pandas as pd
+# import numpy as np
+# #Create a Dictionary of series
+# d = {
+#    'Age':pd.Series([25,26,25,23,30,29]),
+#    'Rating':pd.Series([4.23,3.24,3.98,2.56,3.20])
+# }
+# #Create a DataFrame
+# df = pd.DataFrame(d)
+# print(df.apply(np.mean,axis=1))
+# 0    14.615
+# 1    14.620
+# 2    14.490
+# 3    12.780
+# 4    16.600
+# 5    29.000
+# dtype: float64
+
+
+
+
+
+######################################################3
+# import pandas as pd
+# import numpy as np
+# #Create a Dictionary of series
+# d = {
+#    'Age':pd.Series([25,26,25,23,30,29]),
+#    'Rating':pd.Series([4.23,3.24,3.98,2.56,3.20])
+# }
+# #Create a DataFrame
+# df = pd.DataFrame(d)
+# print(df.apply(np.mean))
+# Age       26.333333
+# Rating     3.442000
+# dtype: float64
+
+
+
+
+
+######################################################3
 # import pandas as pd
 # import numpy as np
 # #Create a Dictionary of series
@@ -65,6 +132,7 @@
 
 
 
+######################################################3
 # import pandas as pd
 # import numpy as np
 # #Create a Dictionary of series
@@ -93,7 +161,7 @@
 
 
 
-
+######################################################3
 # import pandas as pd
 # import numpy as np
 # #Create a Dictionary of series
@@ -121,13 +189,18 @@
 
 
 
-
-
-
-
-
-
-
+# import pandas as pd
+# import numpy as np
+# #Create a Dictionary of series
+# d = {
+#    'Age':pd.Series([25,26,25,23,30,29]),
+#    'Rating':pd.Series([4.23,3.24,3.98,2.56,3.20])
+# }
+# #Create a DataFrame
+# df = pd.DataFrame(d)
+# print(df)
+# print(df.apply(lambda x : x.max() - x.min()))
+#
 
 
 
