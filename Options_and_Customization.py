@@ -1,34 +1,35 @@
-#Options_and_Customization.py
-
-
-
-
 # Pandas provide API to customize some aspects of its behavior, display is being mostly used.
 # The API is composed of five relevant functions. They are −
-#
 # get_option()
 # set_option()
 # reset_option()
 # describe_option()
 # option_context()
 
-
+###############################################################
 # import pandas as pd
 # print(pd.get_option("display.max_rows"))
 #60
 
 
 
+###############################################################
 # import pandas as pd
 # print(pd.get_option("display.max_columns"))
 # 0
 
+
+
+###############################################################
 # import pandas as pd
 # pd.set_option("display.max_rows",80)
 # print(pd.get_option("display.max_rows"))
 # 80
 
 
+
+
+###############################################################
 # import pandas as pd
 # pd.set_option("display.max_columns",80)
 # print(pd.get_option("display.max_columns"))
@@ -36,13 +37,16 @@
 
 
 
-
+###############################################################
 # import pandas as pd
 # pd.reset_option("display.max_rows")
 # print(pd.get_option("display.max_rows"))
 # 60
 
 
+
+
+###############################################################
 # import pandas as pd
 # pd.describe_option("display.max_rows")
 # print(pd.describe_option("display.max_rows"))
@@ -71,69 +75,6 @@
 #     correct auto-detection.
 #     [default: 60] [currently: 60]
 # None
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
