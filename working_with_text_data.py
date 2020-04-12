@@ -1,10 +1,8 @@
 #working_with_text_data.py
 
 
-# Sr.No	Function & Description
-#
-#
-# lower() == Converts strings in the Series/Index to lower case.
+
+# lower() == Converts stngs in the Series/Index to lower case.
 # upper() == Converts strings in the Series/Index to upper case.
 # len() == Computes String length().
 # strip() == Helps strip whitespace(including newline) from each string in the Series/index from both the sides.
@@ -26,7 +24,7 @@
 
 
 
-
+###################################################################
 # import pandas as pd
 # import numpy as np
 # data1 = {"marks":pd.Series([50,30,40,55,60,70,8,90]),
@@ -38,6 +36,8 @@
 
 
 
+
+#############################################################
 # import pandas as pd
 # import numpy as np
 # s = pd.Series(['Tom', 'William Rick', 'John', 'Alber@t', np.nan, '1234','SteveSmith'])
@@ -53,6 +53,8 @@
 
 
 
+
+#############################################################
 # import pandas as pd
 # import numpy as np
 # s = pd.Series(['Tom', 'William Rick', 'John', 'Alber@t', np.nan, '1234','SteveSmith'])
@@ -68,6 +70,8 @@
 
 
 
+
+#############################################################
 # import pandas as pd
 # import numpy as np
 # s = pd.Series(['Tom', 'William Rick', 'John', 'Alber@t', np.nan, '1234','SteveSmith'])
@@ -84,6 +88,8 @@
 
 
 
+
+#############################################################
 # import pandas as pd
 # import numpy as np
 # s = pd.Series(['Tom', 'William Rick', 'John', 'Alber@t', np.nan, '1234','SteveSmith'])
@@ -99,6 +105,8 @@
 
 
 
+
+#############################################################
 # import pandas as pd
 # import numpy as np
 # s = pd.Series(['Tom', ' William Rick', '  John', 'Al  ber@t', np.nan, '1234','SteveSmith'])
@@ -115,6 +123,8 @@
 
 
 
+
+#############################################################
 # import pandas as pd
 # import numpy as np
 # s = pd.Series(['Tom', ' William Rick', '  John', 'Al  ber@t', np.nan, '123 4','SteveSmith'])
@@ -130,6 +140,24 @@
 
 
 
+
+#############################################################
+# import pandas as pd
+# import numpy as np
+# s = pd.Series(['Tom','William Ric kumar','John','Al  ber@t',np.nan,'123 4','SteveSmith'])
+# print(s.str.split())
+# 0                    [Tom]
+# 1    [William, Ric, kumar]
+# 2                   [John]
+# 3              [Al, ber@t]
+# 4                      NaN
+# 5                 [123, 4]
+# 6             [SteveSmith]
+# dtype: object
+
+
+
+#############################################################
 # import pandas as pd
 # import numpy as np
 # s = pd.Series(['Tom', ' William Rick', '  John', 'Al  ber@t', np.nan, '123 4','SteveSmith'])
@@ -138,6 +166,8 @@
 
 
 
+
+#############################################################
 # import pandas as pd
 # import numpy as np
 # s = pd.Series(['Tom', ' William Rick', '  John', 'Al  ber@t', np.nan, '123 4','SteveSmith'])
@@ -168,6 +198,8 @@
 
 
 
+
+#############################################################
 # import pandas as pd
 # import numpy as np
 # s = pd.Series(['Tom', ' William Rick', '  John', 'Al  ber@t', np.nan, '123 4','SteveSmith'])
@@ -183,7 +215,7 @@
 
 
 
-
+#############################################################
 # import pandas as pd
 # import numpy as np
 # s = pd.Series(['Tom', ' William Rick', '  John', 'Al  ber@t', np.nan, '123 4','SteveSmith'])
@@ -199,6 +231,8 @@
 
 
 
+
+#############################################################
 # import pandas as pd
 # import numpy as np
 # s = pd.Series(['Tom', ' William Rick', '  John', 'Al  ber@t', np.nan, '123 4','SteveSmith'])
@@ -214,6 +248,25 @@
 
 
 
+
+#############################################################
+# import pandas as pd
+# import numpy as np
+# s = pd.Series(['Tom', ' William Rick', '  John', 'Al  ber@t', np.nan, '123 4','SteveSmith'])
+# print(s.str.count('l'))
+# 0    0.0
+# 1    2.0
+# 2    0.0
+# 3    1.0
+# 4    NaN
+# 5    0.0
+# 6    0.0
+# dtype: float64
+
+
+
+
+#############################################################
 # import pandas as pd
 # import numpy as np
 # s = pd.Series(['Tom', ' William Rick', '  John', 'Al  ber@t', np.nan, '123 4','SteveSmith'])
@@ -229,7 +282,7 @@
 
 
 
-
+#############################################################
 import pandas as pd
 # import numpy as np
 # s = pd.Series(['Tom', ' William Rick', '  John', 'Al  ber@t', np.nan, '123 4','SteveSmith'])
@@ -245,6 +298,9 @@ import pandas as pd
 
 
 
+
+
+#############################################################
 # import pandas as pd
 # import numpy as np
 # s = pd.Series(['Tom', ' William Rick', '  John', 'Al  ber@t', np.nan, '123 4','SteveSmith'])
@@ -260,6 +316,9 @@ import pandas as pd
 
 
 
+
+
+#############################################################
 # import pandas as pd
 # import numpy as np
 # s = pd.Series(['Tom', ' William Rick', '  John', 'Al  ber@t', np.nan, '123 4','SteveSmith'])
@@ -274,6 +333,28 @@ import pandas as pd
 # dtype: object
 
 
+
+
+
+#############################################################
+# import pandas as pd
+# import numpy as np
+# s = pd.Series(['Tom', ' William Rick', '  John', 'Al  ber@t', np.nan, '123 4','SteveSmith'])
+# print(s.str.findall('l'))
+# 0        []
+# 1    [l, l]
+# 2        []
+# 3       [l]
+# 4       NaN
+# 5        []
+# 6        []
+# dtype: object
+
+
+
+
+
+#############################################################
 # import pandas as pd
 # import numpy as np
 # s = pd.Series(['Tom', ' William Rick', '  John', 'Al  ber@t', np.nan, '123 4','SteveSmith'])
@@ -290,6 +371,8 @@ dtype: object
 
 
 
+
+#############################################################
 # import pandas as pd
 # import numpy as np
 # s = pd.Series(['Tom', ' William Rick', 'john', 'Al  ber@t', np.nan, '123 4','SteveSmith'])
@@ -305,6 +388,9 @@ dtype: object
 
 
 
+
+
+#############################################################
 # import pandas as pd
 # import numpy as np
 # s = pd.Series(['Tom', ' William Rick', 'john', 'Al  ber@t', np.nan, '123 4','SteveSmith'])
@@ -320,6 +406,8 @@ dtype: object
 
 
 
+
+#############################################################
 # import pandas as pd
 # import numpy as np
 # s = pd.Series(['Tom', ' William Rick', '1000', 'Al  ber@t', np.nan, 100 ,'SteveSmith'])
