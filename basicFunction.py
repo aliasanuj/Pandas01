@@ -30,10 +30,22 @@
 # import numpy as np
 # #Create a series with 100 random numbers
 # s = pd.Series(np.random.randn(5))
+# print(s.dtype)
+# float64
+
+
+
+########################################################
+# import pandas as pd
+# import numpy as np
+# #Create a series with 100 random numbers
+# s = pd.Series(np.random.randn(5))
 # print(s.axes)
 # [RangeIndex(start=0, stop=5, step=1)]
 
 
+
+########################################################
 # import pandas as pd
 # import numpy as np
 # #Create a series with 100 random numbers
@@ -44,6 +56,8 @@
 # False
 
 
+
+########################################################
 # import pandas as pd
 # import numpy as np
 # #Create a series with 4 random numbers
@@ -62,6 +76,7 @@
 
 
 
+########################################################
 # import pandas as pd
 # import numpy as np
 # #Create a series with 4 random numbers
@@ -77,6 +92,9 @@
 
 
 
+
+
+########################################################
 # import pandas as pd
 # import numpy as np
 # #Create a series with 4 random numbers
@@ -93,6 +111,12 @@
 # [0.8838754  2.14140934 0.02821167 1.74161896]
 
 
+
+
+
+
+
+########################################################
 # import pandas as pd
 # import numpy as np
 # #Create a series with 4 random numbers
@@ -113,6 +137,10 @@
 # dtype: float64
 
 
+
+
+
+########################################################
 # import pandas as pd
 # import numpy as np
 # #Create a series with 4 random numbers
@@ -132,8 +160,10 @@
 # 3    1.253546
 # dtype: float64
 
-=================================================
 
+
+
+########################################################
 # DataFrame:
 # T == Transposes rows and columns.
 # axes == Returns a list with the row axis labels and column axis labels as the only members.
@@ -145,7 +175,15 @@
 # values == Numpy representation of NDFrame.
 # head() == Returns the first n rows.
 # tail() == Returns last n rows.
+########################################################
 
+
+
+
+
+
+
+########################################################
 # import pandas as pd
 # import numpy as np
 # #Create a Dictionary of series
