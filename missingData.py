@@ -1,14 +1,18 @@
 #missingData.py
+###########################################################
 
 
-
-
+###########################################################
 #When and Why Is Data Missed?
 # Let us consider an online survey for a product. Many a times, people do not share all the information related to them.
 # Few people share their experience, but not how long they are using the product; few people share how long they are using the
 # product, their experience but not their contact information. Thus, in some or the other way a part of data is always missing, and
 # this is very common in real time.
 
+
+
+
+###########################################################
 # import pandas as pd
 # import numpy as np
 # df = pd.DataFrame(np.random.randn(5, 3), index=['a', 'c', 'e', 'f','h'],columns=['one', 'two', 'three'])
@@ -26,7 +30,7 @@
 
 
 
-
+###########################################################
 # import pandas as pd
 # import numpy as np
 # data1 = {"marks":pd.Series([50,30,40,55,60,70,8,90]),
@@ -53,7 +57,7 @@
 
 
 
-
+###########################################################
 # import pandas as pd
 # import numpy as np
 # data1 = {"marks":pd.Series([50,30,40,60,70,8,90]),
@@ -80,7 +84,7 @@
 
 
 
-
+###########################################################
 # import pandas as pd
 # import numpy as np
 # data1 = {"marks":pd.Series([50,30,40,60,70,8,90]),
@@ -107,12 +111,45 @@
 
 
 
+
+
+
+###########################################################
+# import pandas as pd
+# import numpy as np
+# data1 = {"marks":pd.Series([50,30,40,60,70,8,90]),
+#          "Age" :pd.Series([55,84,24,68,74,21,54])
+#          }
+# df = pd.DataFrame(data1, index=[0,1,3,5,7,9])
+# print(df)
+# df.reindex([2,4,6,8,10])
+# print(df)
+#    marks   Age
+# 0   50.0  55.0
+# 1   30.0  84.0
+# 3   60.0  68.0
+# 5    8.0  21.0
+# 7    NaN   NaN
+# 9    NaN   NaN
+#    marks   Age
+# 0   50.0  55.0
+# 1   30.0  84.0
+# 3   60.0  68.0
+# 5    8.0  21.0
+# 7    NaN   NaN
+# 9    NaN   NaN
+
+
+
+
+###########################################################
 # Calculations with Missing Data
 # When summing data, NA will be treated as Zero
 # If the data are all NA, then the result will be NA
 
 
 
+###########################################################
 # import pandas as pd
 # import numpy as np
 # df = pd.DataFrame(np.random.randn(5, 3), index=['a', 'c', 'e', 'f','h'],columns=['one', 'two', 'three'])
@@ -123,8 +160,28 @@
 
 
 
+###########################################################
+# import pandas as pd
+# import numpy as np
+# df = pd.DataFrame(np.random.randn(5, 3), index=['a', 'c', 'e', 'f','h'],columns=['one', 'two', 'three'])
+# df = df.reindex(['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'])
+# print(df)
+# print(df['one'].sum())
+#         one       two     three
+# a  0.690118  0.276142 -1.116885
+# b       NaN       NaN       NaN
+# c  0.349070  1.339726 -1.131528
+# d       NaN       NaN       NaN
+# e -0.003865 -0.216286 -1.860152
+# f  1.201844 -0.837943  1.189715
+# g       NaN       NaN       NaN
+# h -1.166641  2.614688  0.107510
+# 1.0705264050486611
 
 
+
+
+###########################################################
 # import pandas as pd
 # import numpy as np
 # data1 = {"marks":pd.Series([50,30,40,60,70,8,90]),
@@ -154,6 +211,8 @@
 
 
 
+
+###########################################################
 # import pandas as pd
 # import numpy as np
 # data1 = {"marks":pd.Series([50,30,40,60,70,8,90,22,33]),
@@ -180,6 +239,8 @@
 # 9    NaN   NaN    0.0
 
 
+
+###########################################################
 # import pandas as pd
 # import numpy as np
 # df = pd.DataFrame(index=[0,1,2,3,4,5],columns=['one','two'])
@@ -188,7 +249,22 @@
 
 
 
+###########################################################
+# import pandas as pd
+# import numpy as np
+# df = pd.DataFrame(index=[0,1,2,3,4,5],columns=['one','two'])
+# print(df)
+#   one  two
+# 0  NaN  NaN
+# 1  NaN  NaN
+# 2  NaN  NaN
+# 3  NaN  NaN
+# 4  NaN  NaN
+# 5  NaN  NaN
 
+
+
+###########################################################
 # Cleaning / Filling Missing Data
 # Pandas provides various methods for cleaning the missing values. The fillna function can
 # “fill in” NA values with non-null data in a couple of ways, which we have illustrated in the following sections.
@@ -198,7 +274,7 @@
 
 
 
-
+###########################################################
 # import pandas as pd
 # import numpy as np
 # data1 = {"marks":pd.Series([50,30,40,60,70,8,90,22,33]),
@@ -224,15 +300,16 @@
 # 9    0.0   0.0
 
 
+
+
+###########################################################
 # Fill NA Forward and Backward
 # pad/fill == Fill methods Forward
 # bfill/backfill == Fill methods Backward
 
 
 
-
-
-
+###########################################################
 # import pandas as pd
 # import numpy as np
 # data1 = {"marks":pd.Series([50,30,40,60,70,8,90,22,33]),
@@ -261,7 +338,7 @@
 
 
 
-
+###########################################################
 # import pandas as pd
 # import numpy as np
 # data1 = {"marks":pd.Series([50,30,40,60,70,8,90,22,33]),
@@ -298,42 +375,46 @@
 
 
 
-
+###########################################################
 # import pandas as pd
 # import numpy as np
 # data1 = {"marks":pd.Series([50,30,40,60,70,8,90,22,33]),
 #          "Age" :pd.Series([55,84,24,68,74,21,54,77,99])
 #          }
-# df = pd.DataFrame(data1, index=[0,1,3,4,6,7,8,9])
+# df = pd.DataFrame(data1, index=[0,1,4,6,7,8,9])
 # print(df)
-# c = df.reindex([4,5,6,7,8])
+# c = df.reindex([3,4,5,6,7,8,9])
 # print(c)
 # print(c.fillna(method='backfill'))
 #    marks   Age
 # 0   50.0  55.0
 # 1   30.0  84.0
-# 3   60.0  68.0
 # 4   70.0  74.0
 # 6   90.0  54.0
 # 7   22.0  77.0
 # 8   33.0  99.0
 # 9    NaN   NaN
 #    marks   Age
+# 3    NaN   NaN
 # 4   70.0  74.0
 # 5    NaN   NaN
 # 6   90.0  54.0
 # 7   22.0  77.0
 # 8   33.0  99.0
+# 9    NaN   NaN
 #    marks   Age
+# 3   70.0  74.0
 # 4   70.0  74.0
 # 5   90.0  54.0
 # 6   90.0  54.0
 # 7   22.0  77.0
 # 8   33.0  99.0
+# 9    NaN   NaN
 
 
 
 
+###########################################################
 #Drop Missing Values
 # import pandas as pd
 # import numpy as np
@@ -364,9 +445,7 @@
 
 
 
-
-
-
+###########################################################
 # import pandas as pd
 # import numpy as np
 # data1 = {"marks":pd.Series([50,30,40,60,70]),
@@ -398,7 +477,7 @@
 
 
 
-
+###########################################################
 # import pandas as pd
 # import numpy as np
 # df = pd.DataFrame({'one':[10,20,30,40,50,2000], 'two':[1000,0,30,40,50,60]})
@@ -414,6 +493,8 @@
 
 
 
+
+###########################################################
 # import pandas as pd
 # import numpy as np
 # data1 = {"marks":pd.Series([50,30,40,60,70]),

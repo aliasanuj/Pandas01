@@ -1,11 +1,9 @@
 #aggregations.py
 
 
-# import pandas as pdb jfbidfhdsk
 
-# import pandas as pdxcjvhdfighfdul
-
-
+###########################################################
+# import pandas as
 # import numpy as np
 # data1 = {"marks":pd.Series([50,30,40,55,60,70,8,90]),
 #          "Age01" :pd.Series([55,84,24,68,74,21,54]),
@@ -30,6 +28,8 @@
 
 
 
+
+###########################################################
 # import pandas as pd
 # import numpy as np
 # data1 = {"marks":pd.Series([50,30,40,55,60,70,8,90]),
@@ -65,15 +65,44 @@
 # 9    NaN    NaN  199.0    NaN
 
 
+
+
+
+
+
+###########################################################
+# import pandas as pd
+# import numpy as np
+# data1 = {"marks":pd.Series([50,30,40,55,60,70,8,90]),
+#          "Age01" :pd.Series([55,84,24,68,74,21,54]),
+#          "Age02" :pd.Series([11,22,33,44,55,66,77,88,99,100]),
+#          "Age03" :pd.Series([55,48,92,96,47,22,4]),
+#          }
+# df = pd.DataFrame(data1)
+# print(df)
+# print(df.aggregate(np.sum))
+#    marks  Age01  Age02  Age03
+# 0   50.0   55.0     11   55.0
+# 1   30.0   84.0     22   48.0
+# 2   40.0   24.0     33   92.0
+# 3   55.0   68.0     44   96.0
+# 4   60.0   74.0     55   47.0
+# 5   70.0   21.0     66   22.0
+# 6    8.0   54.0     77    4.0
+# 7   90.0    NaN     88    NaN
+# 8    NaN    NaN     99    NaN
+# 9    NaN    NaN    100    NaN
+# marks    403.0
+# Age01    380.0
+# Age02    595.0
+# Age03    364.0
+# dtype: float64
+
+
 #Apply Aggregation on a Single Column of a Dataframe
 
 
-
-
-
-
-
-
+###########################################################
 # import pandas as pd
 # import numpy as np
 # data1 = {"marks":pd.Series([50,30,40,55,60,70,8,90]),
@@ -111,6 +140,8 @@
 
 
 
+
+###########################################################
 # import pandas as pd
 # import numpy as np
 # data1 = {"marks":pd.Series([50,30,40,55,60,70,8,90]),
@@ -146,6 +177,9 @@
 # 9    NaN    NaN
 
 
+
+
+###########################################################
 #Apply Multiple Functions on Multiple Columns of a DataFrame
 # import pandas as pd
 # import numpy as np
@@ -182,7 +216,7 @@
 
 
 
-
+###########################################################
 # import pandas as pd
 # import numpy as np
 # data1 = {"marks":pd.Series([50,30,40,55,60,70,8,90]),
@@ -220,6 +254,9 @@
 
 
 
+
+
+###########################################################
 # import pandas as pd
 # import numpy as np
 # data1 = {"marks":pd.Series([50,30,40,55,60,70,8,90]),
@@ -258,6 +295,7 @@
 
 
 
+###########################################################
 # import pandas as pd
 # import numpy as np
 # data1 = {"marks":pd.Series([50,30,40,55,60,70,8,90]),
@@ -294,5 +332,37 @@
 
 
 
-
-
+###########################################################
+# import pandas as pd
+# import numpy as np
+# data1 = {"marks":pd.Series([50,30,40,55,60,70,8,90]),
+#          "Age01" :pd.Series([55,84,68,21,54]),
+#          "Age02" :pd.Series([11,22,np.nan,44,55,66,77,88,99,100]),
+#          "Age03" :pd.Series([55,48,92,96,47,22,4]),
+#          }
+# df = pd.DataFrame(data1)
+# print(df)
+# r = df.rolling(window=2,min_periods=1)
+# print(r.aggregate({"marks": np.sum, "Age02":np.sum}))
+#    marks  Age01  Age02  Age03
+# 0   50.0   55.0   11.0   55.0
+# 1   30.0   84.0   22.0   48.0
+# 2   40.0   68.0    NaN   92.0
+# 3   55.0   21.0   44.0   96.0
+# 4   60.0   54.0   55.0   47.0
+# 5   70.0    NaN   66.0   22.0
+# 6    8.0    NaN   77.0    4.0
+# 7   90.0    NaN   88.0    NaN
+# 8    NaN    NaN   99.0    NaN
+# 9    NaN    NaN  100.0    NaN
+#    marks  Age02
+# 0   50.0   11.0
+# 1   80.0   33.0
+# 2   70.0   22.0
+# 3   95.0   44.0
+# 4  115.0   99.0
+# 5  130.0  121.0
+# 6   78.0  143.0
+# 7   98.0  165.0
+# 8   90.0  187.0
+# 9    NaN  199.0

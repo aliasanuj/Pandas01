@@ -1,12 +1,13 @@
 #windowFunction.py
-
-
+###########################################################
 # For working on numerical data, Pandas provide few variants like rolling, expanding and exponentially
 # moving weights for window statistics. Among these are sum, mean, median, variance, covariance, correlation, etc.
 # We will now learn how each of these can be applied on DataFrame objects.
 
 
 
+
+###########################################################
 # import pandas as pd
 # import numpy as np
 #
@@ -29,6 +30,8 @@
 
 
 
+
+###########################################################
 # import pandas as pd
 # import numpy as np
 # df = pd.DataFrame(np.random.randn(10, 4),
@@ -48,12 +51,15 @@
 # 2000-01-10  0.487680 -0.316211  0.095247  0.750156
 
 
-import pandas as pd
-import numpy as np
-df = pd.DataFrame(np.random.randn(10, 4),
-                  index=pd.date_range('1/1/2000', periods=10),
-                  columns=['A', 'B', 'C', 'D'])
-print(df.ewm(com=2).mean())
+
+
+###########################################################
+# import pandas as pd
+# import numpy as np
+# df = pd.DataFrame(np.random.randn(10, 4),
+#                   index=pd.date_range('1/1/2000', periods=10),
+#                   columns=['A', 'B', 'C', 'D'])
+# print(df.ewm(com=2).mean())
 #                   A         B         C         D
 # 2000-01-01 -0.649891  1.090328  0.355584 -0.716391
 # 2000-01-02 -0.965120  0.085698  0.853546 -0.168693
@@ -65,64 +71,3 @@ print(df.ewm(com=2).mean())
 # 2000-01-08 -0.041377 -0.472424  0.117420 -0.622858
 # 2000-01-09  0.149519  0.507394 -0.145436 -0.596742
 # 2000-01-10 -0.052993  0.658983  0.136513 -0.471596
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
