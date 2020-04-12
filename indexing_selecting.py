@@ -1,13 +1,10 @@
-indexing_selecting.py
-
-
-
+###############################################################
 # .loc() == Label based
 # .iloc() == Integer based
 # .ix() == Both Label and Integer based
 
 
-
+###############################################################
 # .loc()
 # Pandas provide various methods to have purely label based indexing. When slicing, the start
 # bound is also included. Integers are valid labels, but they refer to the label and not the position.
@@ -19,9 +16,11 @@ indexing_selecting.py
 # A Boolean array
 #
 # loc takes two single/list/range operator separated by ','. The first one indicates the row and the second one indicates columns.
-#
 
 
+
+
+###############################################################
 # import pandas as pd
 # import numpy as np
 # data1 = {"marks":pd.Series([50,30,40,55,60,70,8,90]),
@@ -51,6 +50,118 @@ indexing_selecting.py
 
 
 
+
+
+
+###############################################################
+# import pandas as pd
+# import numpy as np
+# data1 = {"marks":pd.Series([50,30,40,55,60,70,8,90]),
+#          "Age" :pd.Series([55,84,24,68,74,21,54])
+#          }
+# df = pd.DataFrame(data1)
+# print(df)
+# print(df.loc[:,'marks'])
+#    marks   Age
+# 0     50  55.0
+# 1     30  84.0
+# 2     40  24.0
+# 3     55  68.0
+# 4     60  74.0
+# 5     70  21.0
+# 6      8  54.0
+# 7     90   NaN
+# 0    50
+# 1    30
+# 2    40
+# 3    55
+# 4    60
+# 5    70
+# 6     8
+# 7    90
+
+
+
+
+###############################################################
+# import pandas as pd
+# import numpy as np
+# data1 = {"marks":pd.Series([50,30,40,55,60,70,8,90]),
+#          "Age" :pd.Series([55,84,24,68,74,21,54])
+#          }
+# df = pd.DataFrame(data1)
+# print(df)
+# print(df.loc["marks":])
+#    marks   Age
+# 0     50  55.0
+# 1     30  84.0
+# 2     40  24.0
+# 3     55  68.0
+# 4     60  74.0
+# 5     70  21.0
+# 6      8  54.0
+# 7     90   NaN
+# Empty DataFrame
+# Columns: [marks, Age]
+# Index: []
+
+
+
+
+
+###############################################################
+# import pandas as pd
+# import numpy as np
+# data1 = {"marks":pd.Series([50,30,40,55,60,70,8,90]),
+#          "Age" :pd.Series([55,84,24,68,74,21,54])
+#          }
+# df = pd.DataFrame(data1)
+# print(df)
+# print(df.loc["Age":])
+#    marks   Age
+# 0     50  55.0
+# 1     30  84.0
+# 2     40  24.0
+# 3     55  68.0
+# 4     60  74.0
+# 5     70  21.0
+# 6      8  54.0
+# 7     90   NaN
+# Empty DataFrame
+# Columns: [marks, Age]
+# Index: []
+
+
+
+
+###############################################################
+# import pandas as pd
+# import numpy as np
+# data1 = {"marks":pd.Series([50,30,40,55,60,70,8,90]),
+#          "Age" :pd.Series([55,84,24,68,74,21,54])
+#          }
+# df = pd.DataFrame(data1)
+# print(df)
+# print(df.loc[[2,4,6,7,10,12,14,5]:"Age"])
+# TypeError: '[2, 4, 6, 7, 10, 12, 14, 5]' is an invalid key
+
+
+
+###############################################################
+# import pandas as pd
+# import numpy as np
+# data1 = {"marks":pd.Series([50,30,40,55,60,70,8,90]),
+#          "Age" :pd.Series([55,84,24,68,74,21,54])
+#          }
+# df = pd.DataFrame(data1)
+# print(df)
+# print(df.loc[['a','b','c']:"Age"])
+# TypeError: '['a', 'b', 'c']' is an invalid key
+
+
+
+
+###############################################################
 # import pandas as pd
 # import numpy as np
 # data1 = {"marks":pd.Series([50,30,40,55,60,70,8,90]),
@@ -81,7 +192,7 @@ indexing_selecting.py
 
 
 
-
+###############################################################
 # import pandas as pd
 # import numpy as np
 # data1 = {"marks":pd.Series([50,30,40,55,60,70,8,90]),
@@ -110,9 +221,7 @@ indexing_selecting.py
 
 
 
-
-
-
+###############################################################
 # import pandas as pd
 # import numpy as np
 # data1 = {"marks":pd.Series([50,30,40,55,60,70,8,90]),
@@ -144,7 +253,7 @@ indexing_selecting.py
 
 
 
-
+###############################################################
 # import pandas as pd
 # import numpy as np
 # df = pd.DataFrame(np.random.randn(8, 4), index = ['a','b','c','d','e','f','g','h'], columns = ['A', 'B', 'C', 'D'])
@@ -158,7 +267,7 @@ indexing_selecting.py
 
 
 
-
+###############################################################
 # import pandas as pd
 # import numpy as np
 # data1 = {"marks":pd.Series([50,30,40,55,60,70,8,90]),
@@ -179,8 +288,7 @@ indexing_selecting.py
 
 
 
-
-
+###############################################################
 # import pandas as pd
 # import numpy as np
 # df = pd.DataFrame(np.random.randn(8, 4),
@@ -206,7 +314,7 @@ indexing_selecting.py
 
 
 
-
+###############################################################
 # import pandas as pd
 # import numpy as np
 # data1 = {"marks":pd.Series([50,30,40,55,60,70,8,90]),
@@ -226,7 +334,7 @@ indexing_selecting.py
 
 
 
-
+###############################################################
 # import pandas as pd
 # import numpy as np
 # data1 = {"marks":pd.Series([5,30,40,55,60,70,8,90]),
@@ -244,6 +352,36 @@ indexing_selecting.py
 
 
 
+
+###############################################################
+# import pandas as pd
+# import numpy as np
+# data1 = {"marks":pd.Series([5,30,40,55,60,70,8,90]),
+#          "Age" :pd.Series([55,5,24,68,74,21,54]),
+#          "speed" :pd.Series([100,5,300,68,74,21,54,100]),
+#          }
+# df = pd.DataFrame(data1)
+# print(df)
+# print(df.loc[7]>20)
+#    marks   Age  speed
+# 0      5  55.0    100
+# 1     30   5.0      5
+# 2     40  24.0    300
+# 3     55  68.0     68
+# 4     60  74.0     74
+# 5     70  21.0     21
+# 6      8  54.0     54
+# 7     90   NaN    100
+# marks     True
+# Age      False
+# speed     True
+# Name: 7, dtype: bool
+
+
+
+
+
+###############################################################
 # import pandas as pd
 # import numpy as np
 # data1 = {"marks":pd.Series([5,30,40,55,60,70,8,90]),
@@ -258,6 +396,9 @@ indexing_selecting.py
 # Name: 2, dtype: bool
 
 
+
+
+###############################################################
 # .iloc()
 # Pandas provide various methods in order to get purely integer based indexing. Like python and numpy, these are 0-based indexing.
 # The various access methods are as follows −
@@ -266,6 +407,8 @@ indexing_selecting.py
 # == A range of values
 
 
+
+###############################################################
 # import pandas as pd
 # import numpy as np
 # data1 = {"marks":pd.Series([5,30,40,55,60,70,8,90]),
@@ -286,9 +429,7 @@ indexing_selecting.py
 
 
 
-
-
-
+###############################################################
 # import pandas as pd
 # import numpy as np
 # data1 = {"marks":pd.Series([5,30,40,55,60,70,8,90]),
@@ -306,7 +447,7 @@ indexing_selecting.py
 
 
 
-
+###############################################################
 # import pandas as pd
 # import numpy as np
 # data1 = {"marks":pd.Series([5,30,40,55,60,70,8,90]),
@@ -322,6 +463,42 @@ indexing_selecting.py
 
 
 
+###############################################################
+# import pandas as pd
+# import numpy as np
+# data1 = {"marks":pd.Series([5,30,40,55,60,70,8,90]),
+#          "Age" :pd.Series([55,5,24,68,74,21,54]),
+#          "speed" :pd.Series([100,5,300,68,74,21,54]),
+#          }
+# df = pd.DataFrame(data1)
+# print(df.iloc[0:4, 0:3])
+#    marks   Age  speed
+# 0      5  55.0  100.0
+# 1     30   5.0    5.0
+# 2     40  24.0  300.0
+# 3     55  68.0   68.0
+
+
+
+
+###############################################################
+# import pandas as pd
+# import numpy as np
+# data1 = {"marks":pd.Series([5,30,40,55,60,70,8,90]),
+#          "Age" :pd.Series([55,5,24,68,74,21,54]),
+#          "speed" :pd.Series([100,5,300,68,74,21,54]),
+#          }
+# df = pd.DataFrame(data1)
+# print(df.iloc[0:4, 0:2])
+#    marks   Age
+# 0      5  55.0
+# 1     30   5.0
+# 2     40  24.0
+# 3     55  68.0
+
+
+
+###############################################################
 # import pandas as pd
 # import numpy as np
 # data1 = {"marks":pd.Series([5,30,40,55,60,70,8,90]),
@@ -335,9 +512,7 @@ indexing_selecting.py
 # 3     55  68.0
 
 
-
-
-
+###############################################################
 # .ix()
 # Besides pure label based and integer based, Pandas provides a hybrid method for
 # selections and subsetting the object using the .ix() operator.
