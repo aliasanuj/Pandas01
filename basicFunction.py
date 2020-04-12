@@ -207,6 +207,8 @@
 
 
 
+
+########################################################
 # import pandas as pd
 # import numpy as np
 # #Create a Dictionary of series
@@ -222,10 +224,12 @@
 # Name     Tom  James  Ricky   Vin  Steve  Smith  Jack  NaN
 # Age       25     26     25    23     30     29    23  NaN
 # Rating  4.23   3.24   3.98  2.56    3.2    4.6   3.8   14
-#
 
 
 
+
+
+########################################################
 # import pandas as pd
 # import numpy as np
 # #Create a Dictionary of series
@@ -243,6 +247,7 @@
 
 
 
+########################################################
 # import pandas as pd
 # import numpy as np
 # #Create a Dictionary of series
@@ -260,6 +265,9 @@
 # dtype: object
 
 
+
+
+########################################################
 # import pandas as pd
 # import numpy as np
 # # Create a Dictionary of series
@@ -274,6 +282,8 @@
 # False
 
 
+
+########################################################
 # import pandas as pd
 # import numpy as np
 # #Create a Dictionary of series
@@ -299,6 +309,8 @@
 # 2
 
 
+
+########################################################
 # import pandas as pd
 # import numpy as np
 # # Create a Dictionary of series
@@ -324,6 +336,8 @@
 # (7, 3)
 
 
+
+########################################################
 # import pandas as pd
 # import numpy as np
 # # Create a Dictionary of series
@@ -349,6 +363,9 @@
 # 21
 
 
+
+
+########################################################
 # import pandas as pd
 # import numpy as np
 # # Create a Dictionary of series
@@ -383,6 +400,10 @@
 #
 
 
+
+
+
+########################################################
 # import pandas as pd
 # import numpy as np
 # # Create a Dictionary of series
@@ -411,6 +432,9 @@
 # 1  James   26    3.24
 
 
+
+
+########################################################
 # import pandas as pd
 # import numpy as np
 # # Create a Dictionary of series
