@@ -4,7 +4,7 @@
 # Series, DatFrames and Panel, all have the function pct_change(). This function compares every element with
 # its prior element and computes the change percentage.
 
-
+###########################################################
 # import pandas as pd
 # import numpy as np
 # data1 = {"marks":pd.Series([50,30,40,55,60,70,8,90]),
@@ -34,6 +34,8 @@
 
 
 
+
+###########################################################
 # import pandas as pd
 # import numpy as np
 # data1 = {"marks":pd.Series([50,30,40,55,60,70,8,90]),
@@ -64,7 +66,7 @@
 
 
 
-
+###########################################################
 # import pandas as pd
 # import numpy as np
 # data1 = {"marks":pd.Series([50,30,40,55,60,70,8,90]),
@@ -94,12 +96,17 @@
 
 
 
+
+
+###########################################################
 # Covariance
 # Covariance is applied on series data. The Series object has a method cov to
 # compute covariance between series objects. NA will be excluded automatically.
 
 
 
+
+###########################################################
 # import pandas as pd
 # import numpy as np
 # data1 = pd.Series([50,30,40,55,60,70,8,90])
@@ -130,11 +137,7 @@
 
 
 
-
-
-
-
-
+###########################################################
 # import pandas as pd
 # import numpy as np
 # data1 = {"marks":pd.Series([50,30,40,55,60,70,8,90]),
@@ -163,7 +166,7 @@
 
 
 
-
+###########################################################
 # import pandas as pd
 # import numpy as np
 # data1 = {"marks":pd.Series([50,30,40,55,60,70,8,90]),
@@ -196,9 +199,7 @@
 
 
 
-
-
-
+###########################################################
 # import pandas as pd
 # import numpy as np
 # data1 = {"marks":pd.Series([50,30,40,55,60,70,8,90]),
@@ -230,6 +231,7 @@
 
 
 
+###########################################################
 # import pandas as pd
 # import numpy as np
 # data1 = {"marks":pd.Series([50,30,40,55,60,70,8,90]),
@@ -258,21 +260,5 @@
 # 5   21.0  21.0   44.0
 # 6   54.0  54.0   54.0
 # 7    NaN   NaN    NaN
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
