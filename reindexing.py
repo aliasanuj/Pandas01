@@ -1,5 +1,6 @@
 #Reindexing.py
-# Reindexing changes the row labels and column labels of a DataFrame. To reindex means to conform the data to match a given set
+# Reindexing changes the row labels and column labels of a DataFrame.
+# To reindex means to conform the data to match a given set
 # of labels along a particular axis.
 # Multiple operations can be accomplished through indexing like −
 #
@@ -31,9 +32,8 @@
 
 
 
-
 ####################################################
-import pandas as pd
+#import pandas as pd
 # import numpy as np
 # N=10
 # df = pd.DataFrame({
@@ -57,6 +57,7 @@ import pandas as pd
 # 7 2016-01-08  Medium NaN  7.0  0.252319   77.054143
 # 8 2016-01-09  Medium NaN  8.0  0.160999  105.777183
 # 9 2016-01-10    High NaN  9.0  0.493546   83.811737
+
 
 
 
@@ -307,6 +308,7 @@ import pandas as pd
 # 1  26.0    3.24
 # 2  25.0    3.98
 # 3   NaN     NaN
+
 
 
 
