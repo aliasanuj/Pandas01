@@ -100,6 +100,7 @@
 
 
 
+
 ###########################################################
 # import pandas as pd
 # list1 = [["anuj",20],["anuj",21],["anuj",22]]
@@ -112,6 +113,7 @@
 
 
 
+
 ###########################################################
 # import pandas as pd
 # list1 = [["anuj",20],["anuj",21],["anuj",22]]
@@ -121,6 +123,7 @@
 # 10  anuj  20
 # 11  anuj  21
 # 12  anuj  22
+
 
 
 
@@ -138,6 +141,7 @@
 
 
 
+
 ###########################################################
 # import pandas as pd
 # data = {'Name':['Tom', 'Jack', 'Steve', 'Ricky'],'Age':[28,34,29,42]}
@@ -148,6 +152,16 @@
 # 1   Jack   34
 # 2  Steve   29
 # 3  Ricky   42
+
+
+
+###########################################################
+# import pandas as pd
+# data = {'Name':['Tom', 'Jack', 'Steve', 'Ricky'],'Age':[28,34,29,42,55]}
+# df = pd.DataFrame(data,)
+# print(df)
+# ValueError: arrays must all be same length
+
 
 
 
@@ -189,6 +203,8 @@
 # Index: []
 
 
+
+
 ###########################################################
 # import pandas as pd
 # data = {'Name':['Tom', 'Jack', 'Steve', 'Ricky'],'Age':[28,34,29,42]}
@@ -220,6 +236,8 @@
 #    a   b     c
 # 5  1   2   NaN
 # 5  5  10  20.0
+
+
 
 
 ###########################################################
@@ -255,6 +273,7 @@
 
 
 
+
 ###########################################################
 # import pandas as pd
 # d = {'one' : pd.Series([1, 2, 3], index=['a', 'b','c']),
@@ -266,6 +285,7 @@
 # b  2.0    2
 # c  3.0    3
 # d  NaN    4
+
 
 
 
@@ -550,6 +570,7 @@
 
 
 
+
 ###########################################################
 # import pandas as pd
 # d = {"one": pd.Series([1,2,3], index=["a","b","c"]) ,
@@ -592,6 +613,7 @@ import pandas as pd
 
 
 
+
 ###########################################################
 # import pandas as pd
 # d = {"one": pd.Series([1,2,3], index=["a","b","c"]) ,
@@ -600,6 +622,7 @@ import pandas as pd
 # df = pd.DataFrame(d)
 # print(df.loc[1])
 # TypeError: cannot do label indexing on <class 'pandas.core.indexes.base.Index'> with these indexers [1] of <class 'int'>
+
 
 
 
@@ -625,6 +648,7 @@ import pandas as pd
 
 
 
+
 ###########################################################
 # import pandas as pd
 # d = {"one": pd.Series([1,2,3], index=["a","b","c"]) ,
@@ -636,6 +660,7 @@ import pandas as pd
 # two       3.0
 # three    10.0
 # Name: c, dtype: float64
+
 
 
 
@@ -665,6 +690,22 @@ import pandas as pd
 # two      NaN
 # three    5.0
 # Name: e, dtype: float64
+
+
+
+###########################################################
+# import pandas as pd
+# d = {"one": pd.Series([1,2,3], index=["a","b","c"]) ,
+#      "two": pd.Series([1,7,3,8], index=["a","b","c","d"]),
+#      "three": pd.Series([1,20,10,5], index=["a","b","c","e"]) }
+# df = pd.DataFrame(d)
+# print(df)
+#    one  two  three
+# a  1.0  1.0    1.0
+# b  2.0  7.0   20.0
+# c  3.0  3.0   10.0
+# d  NaN  8.0    NaN
+# e  NaN  NaN    5.0
 
 
 

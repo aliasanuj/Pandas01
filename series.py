@@ -2,7 +2,7 @@
 # index --- Index values must be unique and hashable, same length as data. Default np.arrange(n) if no index is passed.
 # dtype  --- dtype is for data type. If None, data type will be inferred
 # copy --- Copy data. Default False
-#knkfdjnjfk
+
 
 ############################################################
 #import the pandas library and aliasing as pd
@@ -127,6 +127,8 @@
 # dtype: float64
 
 
+
+
 ##################################
 #import the pandas library and aliasing as pd
 # import pandas as pd
@@ -139,6 +141,8 @@
 # 2    5
 # 3    5
 # dtype: int64
+
+
 
 
 
@@ -183,12 +187,35 @@
 
 
 
+
+##################################
+# import pandas as pd
+# s = pd.Series([1,2,3,4,5],index = ['a','b','c','d','e','f'])
+# #retrieve the first element
+# print(s)
+# ValueError: Length of passed values is 5, index implies 6.
+#
+
+
+
 ##################################
 # import pandas as pd
 # s = pd.Series([1,2,3,4,5],index = ['a','b','c','d','e'])
 # #retrieve the first element
 # print(s[2])
 # 3
+
+
+
+
+
+##################################
+# import pandas as pd
+# s = pd.Series([7,8,9,10,11],index = ['a','b','c','d','e'])
+# #retrieve the first element
+# print(s[2])
+# 9
+
 
 
 
@@ -240,12 +267,15 @@
 
 
 
+
 ##################################
 # import pandas as pd
 # s = pd.Series([1,2,3,4,5],index = ['a','b','c','d','e'])
 # #retrieve a single element
 # print(s['c'])
 # 3
+
+
 
 
 ##################################
@@ -255,6 +285,8 @@
 # print(s[['a']])
 # a    1
 # dtype: int64
+
+
 
 
 ##################################
@@ -277,6 +309,7 @@
 #     print(s['f'])
 # except KeyError:
 #     print("not present")
+# not present
 
 
 
