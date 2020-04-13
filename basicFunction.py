@@ -114,8 +114,6 @@
 
 
 
-
-
 ########################################################
 # import pandas as pd
 # import numpy as np
@@ -208,6 +206,7 @@
 
 
 
+
 ########################################################
 # import pandas as pd
 # import numpy as np
@@ -247,6 +246,8 @@
 
 
 
+
+
 ########################################################
 # import pandas as pd
 # import numpy as np
@@ -263,6 +264,8 @@
 # Age         int64
 # Rating    float64
 # dtype: object
+
+
 
 
 
@@ -310,6 +313,8 @@
 
 
 
+
+
 ########################################################
 # import pandas as pd
 # import numpy as np
@@ -334,6 +339,8 @@
 # 6   Jack   23    3.80
 # The shape of the object is:
 # (7, 3)
+
+
 
 
 
@@ -398,6 +405,7 @@
 #
 #
 #
+
 
 
 
