@@ -132,6 +132,8 @@
 
 
 
+
+
 #############################################################
 # import pandas as pd
 # import numpy as np
@@ -160,6 +162,48 @@
 # 5    29
 # Name: Age, dtype: int64
 # Rating 0    4.23
+# 1    3.24
+# 2    3.98
+# 3    2.56
+# 4    3.20
+# 5     NaN
+# Name: Rating, dtype: float64
+
+
+
+
+
+#############################################################
+# import pandas as pd
+# import numpy as np
+# #Create a Dictionary of series
+# d = {
+#    'Age':pd.Series([25,26,25,23,30,29]),
+#    'Rating':pd.Series([4.23,3.24,3.98,2.56,3.20])
+# }
+# #Create a DataFrame
+# df = pd.DataFrame(d)
+# print(df)
+# for i,j in df.iteritems():
+#     print(i)
+#     print(j)
+#    Age  Rating
+# 0   25    4.23
+# 1   26    3.24
+# 2   25    3.98
+# 3   23    2.56
+# 4   30    3.20
+# 5   29     NaN
+# Age
+# 0    25
+# 1    26
+# 2    25
+# 3    23
+# 4    30
+# 5    29
+# Name: Age, dtype: int64
+# Rating
+# 0    4.23
 # 1    3.24
 # 2    3.98
 # 3    2.56
@@ -352,6 +396,58 @@
 # 5 Age       29.0
 # Rating     NaN
 # Name: 5, dtype: float64
+
+
+
+
+
+
+#############################################################
+# import pandas as pd
+# import numpy as np
+# #Create a Dictionary of series
+# d = {
+#    'Age':pd.Series([25,26,25,23,30,29]),
+#    'Rating':pd.Series([4.23,3.24,3.98,2.56,3.20])
+# }
+# #Create a DataFrame
+# df = pd.DataFrame(d)
+# print(df)
+# for i,j in df.iterrows():
+#     print(i)
+#     print(j)
+#    Age  Rating
+# 0   25    4.23
+# 1   26    3.24
+# 2   25    3.98
+# 3   23    2.56
+# 4   30    3.20
+# 5   29     NaN
+# 0
+# Age       25.00
+# Rating     4.23
+# Name: 0, dtype: float64
+# 1
+# Age       26.00
+# Rating     3.24
+# Name: 1, dtype: float64
+# 2
+# Age       25.00
+# Rating     3.98
+# Name: 2, dtype: float64
+# 3
+# Age       23.00
+# Rating     2.56
+# Name: 3, dtype: float64
+# 4
+# Age       30.0
+# Rating     3.2
+# Name: 4, dtype: float64
+# 5
+# Age       29.0
+# Rating     NaN
+# Name: 5, dtype: float64
+
 
 
 
