@@ -43,6 +43,57 @@
 
 
 
+
+######################################################3
+# import pandas as pd
+# import numpy as np
+# #Create a Dictionary of series
+# d = {
+#    'Age': [25,26,25,23,30,29],
+#    'Rating': [4.23,3.24,3.98,2.56,3.20]
+# }
+# #Create a DataFrame
+# df = pd.DataFrame(d)
+# print(df)
+# def adder(ele1,ele2):
+#    return ele1+ele2
+# print(df.pipe(adder,5))
+# ValueError: arrays must all be same length
+
+
+
+
+######################################################3
+# import pandas as pd
+# import numpy as np
+# #Create a Dictionary of series
+# d = {
+#    'Age': [25,26,25,23,30],
+#    'Rating': [4.23,3.24,3.98,2.56,3.20]
+# }
+# #Create a DataFrame
+# df = pd.DataFrame(d)
+# print(df)
+# def adder(ele1,ele2):
+#    return ele1+ele2
+# print(df.pipe(adder,5))
+#    Age  Rating
+# 0   25    4.23
+# 1   26    3.24
+# 2   25    3.98
+# 3   23    2.56
+# 4   30    3.20
+#    Age  Rating
+# 0   30    9.23
+# 1   31    8.24
+# 2   30    8.98
+# 3   28    7.56
+# 4   35    8.20
+
+
+
+
+
 ######################################################3
 # import pandas as pd
 # import numpy as np
@@ -57,6 +108,7 @@
 # Age       26.333333
 # Rating     3.442000
 # dtype: float64
+
 
 
 
@@ -132,6 +184,27 @@
 
 
 
+
+
+######################################################3
+# import pandas as pd
+# import numpy as np
+# #Create a Dictionary of series
+# d = {
+#    'Age':pd.Series([25,26,25,23,30,29]),
+#    'Rating':pd.Series([4.23,3.24,3.98,2.56,3.20])
+# }
+# #Create a DataFrame
+# df = pd.DataFrame(d)
+# print(df)
+# print(df['Age'].applymap(lambda x:x*100))
+# AttributeError: 'Series' object has no attribute 'applymap'
+
+
+
+
+
+
 ######################################################3
 # import pandas as pd
 # import numpy as np
@@ -189,6 +262,7 @@
 
 
 
+######################################################3
 # import pandas as pd
 # import numpy as np
 # #Create a Dictionary of series
@@ -200,7 +274,16 @@
 # df = pd.DataFrame(d)
 # print(df)
 # print(df.apply(lambda x : x.max() - x.min()))
-#
+#    Age  Rating
+# 0   25    4.23
+# 1   26    3.24
+# 2   25    3.98
+# 3   23    2.56
+# 4   30    3.20
+# 5   29     NaN
+# Age       7.00
+# Rating    1.67
+# dtype: float64
 
 
 
