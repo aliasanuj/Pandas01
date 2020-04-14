@@ -16,7 +16,8 @@
 # on − Columns (names) to join on. Must be found in both the left and right DataFrame objects.
 # left_on − Columns from the left DataFrame to use as keys. Can either be column names or arrays with length equal to the length of the DataFrame.
 # right_on − Columns from the right DataFrame to use as keys. Can either be column names or arrays with length equal to the length of the DataFrame.
-# left_index − If True, use the index (row labels) from the left DataFrame as its join key(s). In case of a DataFrame with a MultiIndex (hierarchical), the number of levels must match the number of join keys from the right DataFrame.
+# left_index − If True, use the index (row labels) from the left DataFrame as its join key(s). In case of a DataFrame with a MultiIndex (hierarchical),
+# the number of levels must match the number of join keys from the right DataFrame.
 # right_index − Same usage as left_index for the right DataFrame.
 # how − One of 'left', 'right', 'outer', 'inner'. Defaults to inner. Each method has been described below.
 # sort − Sort the result DataFrame by the join keys in lexicographical order. Defaults to True, setting to False will improve the performance substantially in many cases.
@@ -47,6 +48,7 @@
 # 2   3   Bran       sub3
 # 3   4  Bryce       sub6
 # 4   5  Betty       sub5
+
 
 
 
@@ -283,6 +285,8 @@
 
 
 
+
+
 ####################################################################
 # import pandas as pd
 # left = pd.DataFrame({
@@ -300,6 +304,7 @@
 # 2   4.0   Alice       sub6     4  Bryce
 # 3   5.0  Ayoung       sub5     5  Betty
 # 4   NaN     NaN       sub3     3   Bran
+
 
 
 
