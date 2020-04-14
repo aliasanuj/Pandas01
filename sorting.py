@@ -1,7 +1,3 @@
-#sorting.py
-
-
-
 ########################################################
 # There are two kinds of sorting available in Pandas. They are −
 # == By label
@@ -12,7 +8,8 @@
 
 # The behavior of basic iteration over Pandas objects depends on the type.
 # When iterating over a Series, it is regarded as array-like, and basic iteration produces the values.
-# Other data structures, like DataFrame and Panel, follow the dict-like convention of iterating over the keys of the objects.
+# Other data structures, like DataFrame and Panel,
+# follow the dict-like convention of iterating over the keys of the objects.
 # In short, basic iteration (for i in object) produces −
 # == Series − values
 # == DataFrame − column labels

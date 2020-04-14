@@ -1,7 +1,4 @@
 #working_with_text_data.py
-
-
-
 # lower() == Converts stngs in the Series/Index to lower case.
 # upper() == Converts strings in the Series/Index to upper case.
 # len() == Computes String length().
