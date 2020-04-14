@@ -1,7 +1,8 @@
 #statical_function.py
 
 # Percent_change
-# Series, DatFrames and Panel, all have the function pct_change(). This function compares every element with
+# Series, DatFrames and Panel, all have the function pct_change().
+# This function compares every element with
 # its prior element and computes the change percentage.
 
 ###########################################################
@@ -292,5 +293,3 @@
 # 5   21.0  21.0   44.0
 # 6   54.0  54.0   54.0
 # 7    NaN   NaN    NaN
-
-
