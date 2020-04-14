@@ -90,6 +90,8 @@
 
 
 
+
+###########################################################
 # import pandas as pd
 # ipl_data = {'Team': ['Riders', 'Riders', 'Devils', 'Devils', 'Kings',
 #    'kings', 'Kings', 'Kings', 'Riders', 'Royals', 'Royals', 'Riders'],
@@ -108,6 +110,8 @@
 
 
 
+
+###########################################################
 # import pandas as pd
 # ipl_data = {'Team': ['Riders', 'Riders', 'Devils', 'Devils', 'Kings',
 #    'kings', 'Kings', 'Kings', 'Riders', 'Royals', 'Royals', 'Riders'],
@@ -191,6 +195,8 @@
 
 
 
+
+###########################################################
 # import pandas as pd
 # ipl_data = {'Team': ['Riders', 'Riders', 'Devils', 'Devils', 'Kings',
 #    'kings', 'Kings', 'Kings', 'Riders', 'Royals', 'Royals', 'Riders'],
@@ -282,7 +288,20 @@
 #    'Points':[876,789,863,673,741,812,756,788,694,701,804,690]}
 # df = pd.DataFrame(ipl_data)
 # print(df.groupby(['Team','Year']).groups)
-# {('Devils', 2014): Int64Index([2], dtype='int64'), ('Devils', 2015): Int64Index([3], dtype='int64'), ('Kings', 2014): Int64Index([4], dtype='int64'), ('Kings', 2016): Int64Index([6], dtype='int64'), ('Kings', 2017): Int64Index([7], dtype='int64'), ('Riders', 2014): Int64Index([0], dtype='int64'), ('Riders', 2015): Int64Index([1], dtype='int64'), ('Riders', 2016): Int64Index([8], dtype='int64'), ('Riders', 2017): Int64Index([11], dtype='int64'), ('Royals', 2014): Int64Index([9], dtype='int64'), ('Royals', 2015): Int64Index([10], dtype='int64'), ('kings', 2015): Int64Index([5], dtype='int64')}
+# {('Devils', 2014): Int64Index([2], dtype='int64'),
+# ('Devils', 2015): Int64Index([3], dtype='int64'),
+# ('Kings', 2014): Int64Index([4], dtype='int64'),
+# ('Kings', 2016): Int64Index([6], dtype='int64'),
+# ('Kings', 2017): Int64Index([7], dtype='int64'),
+# ('Riders', 2014): Int64Index([0], dtype='int64'),
+# ('Riders', 2015): Int64Index([1], dtype='int64'),
+# ('Riders', 2016): Int64Index([8], dtype='int64'),
+# ('Riders', 2017): Int64Index([11], dtype='int64'),
+# ('Royals', 2014): Int64Index([9], dtype='int64'),
+# ('Royals', 2015): Int64Index([10], dtype='int64'),
+# ('kings', 2015): Int64Index([5], dtype='int64')}
+
+
 
 
 
@@ -417,6 +436,8 @@
 
 
 
+
+
 ###########################################################
 # import pandas as pd
 # ipl_data = {'Team': ['Riders', 'Riders', 'Devils', 'Devils', 'Kings',
@@ -452,6 +473,8 @@
 
 
 
+
+
 ###########################################################
 # import pandas as pd
 # ipl_data = {'Team': ['Riders', 'Riders', 'Devils', 'Devils', 'Kings',
@@ -482,6 +505,8 @@
 
 
 
+
+
 ###########################################################
 # Select a Group
 # Using the get_group() method, we can select a single group.
@@ -499,6 +524,7 @@
 # 2  Devils     2  2014     863
 # 4   Kings     3  2014     741
 # 9  Royals     4  2014     701
+
 
 
 
@@ -627,6 +653,8 @@
 
 
 
+
+###########################################################
 # import pandas as pd
 # import numpy as np
 # ipl_data = {'Team': ['Riders', 'Riders', 'Devils', 'Devils', 'Kings',
@@ -654,13 +682,14 @@
 
 
 
-
+###########################################################
 # Filtration
 # Filtration filters the data on a defined criteria and returns the subset of data.
 # The filter() function is used to filter the data.
 
 
 
+###########################################################
 # import pandas as pd
 # import numpy as np
 # ipl_data = {'Team': ['Riders', 'Riders', 'Devils', 'Devils', 'Kings',
@@ -694,6 +723,8 @@
 # 11  Riders     2  2017     690
 
 
+
+###########################################################
 # import pandas as pd
 # import numpy as np
 # ipl_data = {'Team': ['Riders', 'Riders', 'Devils', 'Devils', 'Kings',
