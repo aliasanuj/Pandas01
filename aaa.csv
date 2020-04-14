@@ -1,6 +1,6 @@
-S NO ,NAME,AGE,CITY,SALARY
-0,aaa,10,patna,10000
-1,bbb,20,noida,20000
-2,ccc,30,banglore,30000
-3,ddd,40,delhi,40000
-4,eee,50,NaN,50000
+S NO ,NAME,AGE,CITY,SALARY,SALARY1,TOTAL
+0,aaa,10,patna,10000,200,
+1,bbb,20,noida,20000,400,
+2,ccc,30,banglore,30000,600,
+3,ddd,40,delhi,40000,800,
+4,eee,50,NaN,50000,1000,
