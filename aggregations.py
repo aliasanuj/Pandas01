@@ -1,7 +1,4 @@
 #aggregations.py
-
-
-
 ###########################################################
 # import pandas as
 # import numpy as np
@@ -25,6 +22,7 @@
 # 8    NaN    NaN     99    NaN
 # 9    NaN    NaN    100    NaN
 # Rolling [window=2,min_periods=1,center=False,axis=0]
+
 
 
 
@@ -99,9 +97,10 @@
 # dtype: float64
 
 
+
+
+
 #Apply Aggregation on a Single Column of a Dataframe
-
-
 ###########################################################
 # import pandas as pd
 # import numpy as np
@@ -366,3 +365,5 @@
 # 7   98.0  165.0
 # 8   90.0  187.0
 # 9    NaN  199.0
+
+
