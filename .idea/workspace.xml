@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ccec2869-885f-4e07-aa6f-3b69668b5eee" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Pandas01.iml" afterPath="$PROJECT_DIR$/.idea/Pandas01.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sorting.py" afterPath="$PROJECT_DIR$/sorting.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/working_with_text_data.py" afterPath="$PROJECT_DIR$/working_with_text_data.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />

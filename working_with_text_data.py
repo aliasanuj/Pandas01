@@ -124,6 +124,22 @@
 #############################################################
 # import pandas as pd
 # import numpy as np
+# s = pd.Series(['Tom', ' William Rick', '  John', 'Al  ber@t', np.nan, '1234','SteveSmith'])
+# print(s.str.strip("l"))
+# 0              Tom
+# 1     William Rick
+# 2             John
+# 3        Al  ber@t
+# 4              NaN
+# 5             1234
+# 6       SteveSmith
+# dtype: object
+
+
+
+#############################################################
+# import pandas as pd
+# import numpy as np
 # s = pd.Series(['Tom', ' William Rick', '  John', 'Al  ber@t', np.nan, '123 4','SteveSmith'])
 # print(s.str.split())
 # 0              [Tom]
@@ -180,6 +196,25 @@
 
 
 
+
+#############################################################
+# import pandas as pd
+# import numpy as np
+# s = pd.Series(['Tom', 'William Rick', 'John', 'Alber@t', np.nan, '1234','SteveSmith'])
+# print(s.str.get_dummies())
+#    1234  Alber@t  John  SteveSmith  Tom  William Rick
+# 0     0        0     0           0    1             0
+# 1     0        0     0           0    0             1
+# 2     0        0     1           0    0             0
+# 3     0        1     0           0    0             0
+# 4     0        0     0           0    0             0
+# 5     1        0     0           0    0             0
+# 6     0        0     0           1    0             0
+
+
+
+
+#############################################################
 # import pandas as pd
 # import numpy as np
 # s = pd.Series(['Tom', ' William Rick', '  John', 'Al  ber@t', np.nan, '123 4','SteveSmith'])
