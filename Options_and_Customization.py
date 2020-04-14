@@ -75,6 +75,3 @@
 #     correct auto-detection.
 #     [default: 60] [currently: 60]
 # None
-
-
-

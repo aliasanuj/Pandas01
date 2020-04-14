@@ -15,7 +15,8 @@
 # A slice object
 # A Boolean array
 #
-# loc takes two single/list/range operator separated by ','. The first one indicates the row and the second one indicates columns.
+# loc takes two single/list/range operator separated by ','.
+# The first one indicates the row and the second one indicates columns.
 
 
 
@@ -144,6 +145,23 @@
 # print(df)
 # print(df.loc[[2,4,6,7,10,12,14,5]:"Age"])
 # TypeError: '[2, 4, 6, 7, 10, 12, 14, 5]' is an invalid key
+
+
+
+
+###############################################################
+# import pandas as pd
+# import numpy as np
+# data1 = {"marks":pd.Series([50,30,40,55,60,70,8,90]),
+#          "Age" :pd.Series([55,84,24,68,74,21,54])
+#          }
+# df = pd.DataFrame(data1)
+# print(df)
+# print(df.loc[2,4,6,7,10,12,14,5:"Age"])
+# TypeError: cannot do label indexing on <class 'pandas.core.indexes.base.Index'> with these indexers [4] of <class 'int'>
+
+
+
 
 
 
@@ -337,6 +355,19 @@
 ###############################################################
 # import pandas as pd
 # import numpy as np
+# data1 = {"marks":pd.Series([50,30,40,55,60,70,8,90]),
+#          "Age" :pd.Series([55,84,24,68,74,21,54]),
+#          "speed" :pd.Series([100,200,300,68,74,21,54]),
+#          }
+# df = pd.DataFrame(data1)
+# print(df.loc[2:3,1:2])
+# TypeError: cannot do slice indexing on <class 'pandas.core.indexes.base.Index'> with these indexers [1] of <class 'int'>
+
+
+
+###############################################################
+# import pandas as pd
+# import numpy as np
 # data1 = {"marks":pd.Series([5,30,40,55,60,70,8,90]),
 #          "Age" :pd.Series([55,5,24,68,74,21,54]),
 #          "speed" :pd.Series([100,5,300,68,74,21,54]),
@@ -400,7 +431,8 @@
 
 ###############################################################
 # .iloc()
-# Pandas provide various methods in order to get purely integer based indexing. Like python and numpy, these are 0-based indexing.
+# Pandas provide various methods in order to get purely integer based indexing.
+# Like python and numpy, these are 0-based indexing.
 # The various access methods are as follows −
 # == An Integer
 # == A list of integers
@@ -459,6 +491,23 @@
 #     Age  speed
 # 2  24.0  300.0
 # 3  68.0   68.
+
+
+
+
+
+###############################################################
+# import pandas as pd
+# import numpy as np
+# data1 = {"marks":pd.Series([5,30,40,55,60,70,8,90]),
+#          "Age" :pd.Series([55,5,24,68,74,21,54]),
+#          "speed" :pd.Series([100,5,300,68,74,21,54]),
+#          }
+# df = pd.DataFrame(data1)
+# print(df.iloc[2:4, 2:3])
+#    speed
+# 2  300.0
+# 3   68.0
 
 
 
