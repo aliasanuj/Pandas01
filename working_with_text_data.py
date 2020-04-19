@@ -185,7 +185,7 @@
 # import numpy as np
 # s = pd.Series(['Tom', ' William Rick', '  John', 'Al  ber@t', np.nan, '123 4','SteveSmith'])
 # print(s.str.get_dummies())
-#      John   William Rick  123 4  Al  ber@t  SteveSmith  Tom
+# #      John   William Rick  123 4  Al  ber@t  SteveSmith  Tom
 # 0       0              0      0          0           0    1
 # 1       0              1      0          0           0    0
 # 2       1              0      0          0           0    0
@@ -260,6 +260,17 @@
 # 5                    123 4123 4
 # 6          SteveSmithSteveSmith
 # dtype: object
+
+
+
+
+#############################################################
+# import pandas as pd
+# import numpy as np
+# s = pd.Series(['Tom', ' William Rick', '  John', 'Al  ber@t', np.nan, '123 4','SteveSmith'])
+# print(s.str.repeat())
+#TypeError: repeat() missing 1 required positional argument: 'repeats'
+
 
 
 
