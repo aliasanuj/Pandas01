@@ -13,6 +13,7 @@
 # itertuples() − iterate over the rows as namedtuples
 
 
+
 #############################################################
 # import pandas as pd
 # import numpy as np
@@ -62,6 +63,32 @@
 # y
 # C
 # D
+
+
+
+#############################################################
+# import pandas as pd
+# import numpy as np
+# #Create a Dictionary of series
+# d = {
+#    'Age':pd.Series([25,26,25,23,30,29]),
+#    'Rating':pd.Series([4.23,3.24,3.98,2.56,3.20])
+# }
+# #Create a DataFrame
+# df = pd.DataFrame(d)
+# print(df)
+# for i in df:
+#     print(i)
+#    Age  Rating
+# 0   25    4.23
+# 1   26    3.24
+# 2   25    3.98
+# 3   23    2.56
+# 4   30    3.20
+# 5   29     NaN
+# Age
+# Rating
+
 
 
 
@@ -214,6 +241,45 @@
 
 
 
+#############################################################
+# import pandas as pd
+# import numpy as np
+# #Create a Dictionary of series
+# d = {
+#    'Age':pd.Series([25,26,25,23,30,29]),
+#    'Rating':pd.Series([4.23,3.24,3.98,2.56,3.20])
+# }
+# #Create a DataFrame
+# df = pd.DataFrame(d)
+# print(df)
+# for i in df.iterrows():
+#     print(i)
+#    Age  Rating
+# 0   25    4.23
+# 1   26    3.24
+# 2   25    3.98
+# 3   23    2.56
+# 4   30    3.20
+# 5   29     NaN
+# (0, Age       25.00
+# Rating     4.23
+# Name: 0, dtype: float64)
+# (1, Age       26.00
+# Rating     3.24
+# Name: 1, dtype: float64)
+# (2, Age       25.00
+# Rating     3.98
+# Name: 2, dtype: float64)
+# (3, Age       23.00
+# Rating     2.56
+# Name: 3, dtype: float64)
+# (4, Age       30.0
+# Rating     3.2
+# Name: 4, dtype: float64)
+# (5, Age       29.0
+# Rating     NaN
+# Name: 5, dtype: float64)
+
 
 #############################################################
 # import pandas as pd
@@ -241,6 +307,50 @@
 # 3
 # 4
 # 5
+
+
+
+
+
+#############################################################
+# import pandas as pd
+# import numpy as np
+# #Create a Dictionary of series
+# d = {
+#    'Age':pd.Series([25,26,25,23,30,29]),
+#    'Rating':pd.Series([4.23,3.24,3.98,2.56,3.20])
+# }
+# #Create a DataFrame
+# df = pd.DataFrame(d)
+# print(df)
+# for i in df.iterrows():
+#     print(i)
+#    Age  Rating
+# 0   25    4.23
+# 1   26    3.24
+# 2   25    3.98
+# 3   23    2.56
+# 4   30    3.20
+# 5   29     NaN
+# (0, Age       25.00
+# Rating     4.23
+# Name: 0, dtype: float64)
+# (1, Age       26.00
+# Rating     3.24
+# Name: 1, dtype: float64)
+# (2, Age       25.00
+# Rating     3.98
+# Name: 2, dtype: float64)
+# (3, Age       23.00
+# Rating     2.56
+# Name: 3, dtype: float64)
+# (4, Age       30.0
+# Rating     3.2
+# Name: 4, dtype: float64)
+# (5, Age       29.0
+# Rating     NaN
+# Name: 5, dtype: float64)
+
 
 
 
@@ -282,6 +392,7 @@
 # Age       29.0
 # Rating     NaN
 # Name: 5, dtype: float64
+
 
 
 
@@ -479,6 +590,44 @@
 # Pandas(Index=3, Age=23, Rating=2.56)
 # Pandas(Index=4, Age=30, Rating=3.2)
 # Pandas(Index=5, Age=29, Rating=nan)
+
+
+
+
+#############################################################
+# import pandas as pd
+# import numpy as np
+# #Create a Dictionary of series
+# d = {
+#    'Age':pd.Series([25,26,25,23,30,29]),
+#    'Rating':pd.Series([4.23,3.24,3.98,2.56,3.20])
+# }
+# #Create a DataFrame
+# df = pd.DataFrame(d)
+# print(df)
+# for i,j in df.itertuples():
+#     print(j)
+# ValueError: too many values to unpack (expected 2)
+
+
+
+
+#############################################################
+# import pandas as pd
+# import numpy as np
+# #Create a Dictionary of series
+# d = {
+#    'Age':pd.Series([25,26,25,23,30,29]),
+#    'Rating':pd.Series([4.23,3.24,3.98,2.56,3.20])
+# }
+# #Create a DataFrame
+# df = pd.DataFrame(d)
+# print(df)
+# for i,j in df.itertuples():
+#     print(i)
+# #ValueError: too many values to unpack (expected 2)
+
+
 
 
 
