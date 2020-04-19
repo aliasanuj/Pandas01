@@ -47,6 +47,83 @@
 
 ###########################################################333
 # import pandas as pd
+# data = [1,2,3,4,"d","bfjhdg"]
+# df = pd.DataFrame(data)
+# print(df)
+#         0
+# 0       1
+# 1       2
+# 2       3
+# 3       4
+# 4       d
+# 5  bfjhdg
+
+
+
+###########################################################333
+# import pandas as pd
+# data = [1,2,3,4,"d","bfjhdg","","bdsj"]
+# df = pd.DataFrame(data)
+# print(df)
+#         0
+# 0       1
+# 1       2
+# 2       3
+# 3       4
+# 4       d
+# 5  bfjhdg
+# 6
+# 7    bdsj
+
+
+
+###########################################################
+# import pandas as pd
+# data = [[1,2,3,4,"d","bfjhdg"]]
+# df = pd.DataFrame(data)
+# print(df)
+#    0  1  2  3  4       5
+# 0  1  2  3  4  d  bfjhdg
+
+
+
+###########################################################333
+# import pandas as pd
+# data = [[1,2,3,4,5,6],[1,2,3,7,5,6]]
+# df = pd.DataFrame(data)
+# print(df)
+#    0  1  2  3  4  5
+# 0  1  2  3  4  5  6
+# 1  1  2  3  7  5  6
+
+
+
+###########################################################333
+# import pandas as pd
+# data = [[1,2,3,4,5,6],[1,2,3,7,5,6,7]]
+# df = pd.DataFrame(data)
+# print(df)
+#    0  1  2  3  4  5    6
+# 0  1  2  3  4  5  6  NaN
+# 1  1  2  3  7  5  6  7.0
+
+
+
+
+###########################################################333
+# import pandas as pd
+# data = [[1,2,3,4,5,9],[1,2,3,4,5,6]]
+# df = pd.DataFrame(data)
+# print(df)
+#    0  1  2  3  4  5
+# 0  1  2  3  4  5  9
+# 1  1  2  3  4  5  6
+
+
+
+
+###########################################################333
+# import pandas as pd
 # data = [1,2,3,4,5,6]
 # df = pd.DataFrame(data,index=[7,7,7,7,7,7])
 # print(df)
@@ -129,6 +206,16 @@
 
 ###########################################################
 # import pandas as pd
+# list1 = [["anuj",20],["anuj",21],["anuj",22]]
+# df = pd.DataFrame(list1,index=[10,11])
+# print(df)
+# ValueError: Shape of passed values is (3, 2), indices imply (2, 2)
+
+
+
+
+###########################################################
+# import pandas as pd
 # list1 = [["anuj",20],["anuj",21],["anuj",22],["dohdsu","nfdsjf","ohfudhg"]]
 # df = pd.DataFrame(list1)
 # print(df)
@@ -203,6 +290,19 @@
 # Index: []
 
 
+###########################################################
+# import pandas as pd
+# data = {'Name':['Tom', 'Jack', 'Steve', 'Ricky'],'Age':[28,34,29,42]}
+# df = pd.DataFrame(data)
+# df.columns=["a","b"]
+# print(df)
+#        a   b
+# 0    Tom  28
+# 1   Jack  34
+# 2  Steve  29
+# 3  Ricky  42
+
+
 
 
 ###########################################################
@@ -228,6 +328,8 @@
 # 5  Ricky   42
 
 
+
+
 ###########################################################
 # import pandas as pd
 # data = [{'a': 1, 'b': 2},{'a': 5, 'b': 10, 'c': 20}]
@@ -237,6 +339,16 @@
 # 5  1   2   NaN
 # 5  5  10  20.0
 
+
+
+###########################################################
+# import pandas as pd
+# data = [{'a': 1, 'b': 2},{'a': 5, 'b': 10, 'c': 20}]
+# df = pd.DataFrame(data)
+# print(df)
+#    a   b     c
+# 0  1   2   NaN
+# 1  5  10  20.0
 
 
 
@@ -273,6 +385,22 @@
 
 
 
+###########################################################
+# import pandas as pd
+# data = [{"a":5,"b":6},{"a":5,"b":6,"c":7}]
+# df1 = pd.DataFrame(data,index=[2,2])
+# print(df1)
+# df2 = pd.DataFrame(data, columns=[1,2,3,4,5])
+# print(df2)
+#    a  b    c
+# 2  5  6  NaN
+# 2  5  6  7.0
+#     1   2   3   4   5
+# 0 NaN NaN NaN NaN NaN
+# 1 NaN NaN NaN NaN NaN
+
+
+
 
 ###########################################################
 # import pandas as pd
@@ -285,6 +413,24 @@
 # b  2.0    2
 # c  3.0    3
 # d  NaN    4
+
+
+
+
+###########################################################
+# import pandas as pd
+# d = {'one' : pd.Series([1, 2, 3], index=['a', 'b','c']),
+#      'two' : pd.Series([1, 2, 3, 4], index=['a', 'b', 'c', 'd'])}
+# df = pd.DataFrame(d)
+# df.columns = ["aaa","bbb"]
+# print(df)
+#    aaa  bbb
+# a  1.0    1
+# b  2.0    2
+# c  3.0    3
+# d  NaN    4
+
+
 
 
 
@@ -327,6 +473,21 @@
 # c    3.0
 # d    NaN
 # Name: one, dtype: float64
+
+
+
+
+###########################################################
+# import pandas as pd
+# d = {'one' : pd.Series([1, 2, 3], index=['a', 'b', 'c']),
+#      'two' : pd.Series([1, 2, 3, 4], index=['a', 'b', 'c', 'd'])}
+# df = pd.DataFrame(d)
+# print(df ['two'])
+# a    1
+# b    2
+# c    3
+# d    4
+# Name: two, dtype: int64
 
 
 
@@ -495,6 +656,7 @@
 
 
 
+
 ###########################################################
 # import pandas as pd
 # d = {"one": pd.Series([1,2,3], index=["a","b","c"]) ,
@@ -512,6 +674,20 @@
 
 
 
+
+# import pandas as pd
+# d = {"one": pd.Series([1,2,3], index=["a","b","c"]) ,
+#      "two": pd.Series([1,2,3,4], index=["a","b","c","d"]),
+#      "three": pd.Series([1,2,3,5], index=["a","b","c","e"]) }
+# df = pd.DataFrame(d)
+# del df[0]
+# print(df)
+# KeyError: 0
+
+
+
+
+
 ###########################################################
 # import pandas as pd
 # d = {"one": pd.Series([1,2,3], index=["a","b","c"]) ,
@@ -526,6 +702,20 @@
 # c  3.0    3.0
 # d  NaN    NaN
 # e  NaN    5.0
+
+
+
+
+###########################################################
+# import pandas as pd
+# d = {"one": pd.Series([1,2,3], index=["a","b","c"]) ,
+#      "two": pd.Series([1,2,3,4], index=["a","b","c","d"]),
+#      "three": pd.Series([1,2,3,5], index=["a","b","c","e"]) }
+# df = pd.DataFrame(d)
+# df.pop()
+# print(df)
+#TypeError: pop() missing 1 required positional argument: 'item'
+
 
 
 
@@ -621,7 +811,8 @@ import pandas as pd
 #      "three": pd.Series([1,20,10,5], index=["a","b","c","e"]) }
 # df = pd.DataFrame(d)
 # print(df.loc[1])
-# TypeError: cannot do label indexing on <class 'pandas.core.indexes.base.Index'> with these indexers [1] of <class 'int'>
+# TypeError: cannot do label indexing on <class 'pandas.core.indexes.base.Index'>
+# with these indexers [1] of <class 'int'>
 
 
 
@@ -661,6 +852,20 @@ import pandas as pd
 # three    10.0
 # Name: c, dtype: float64
 
+
+
+
+###########################################################
+# import pandas as pd
+# d = {"one": pd.Series([1,2,3], index=["a","b","x"]) ,
+#      "two": pd.Series([1,7,3,8], index=["a","b","c","d"]),
+#      "three": pd.Series([1,20,10,5], index=["a","b","c","e"]) }
+# df = pd.DataFrame(d)
+# print(df.iloc[2])
+# one       NaN
+# two       3.0
+# three    10.0
+# Name: c, dtype: float64
 
 
 
@@ -739,6 +944,18 @@ import pandas as pd
 
 
 
+
+###########################################################
+# import pandas as pd
+# d = {"one": pd.Series([1,2,3], index=["a","b","c"]) ,
+#      "two": pd.Series([1,7,6,8], index=["a","b","c","d"]),
+#      "three": pd.Series([1,20,10,5], index=["a","b","c","e"]) }
+# df = pd.DataFrame(d)
+# print(df[:,:])
+# TypeError: '(slice(None, None, None), slice(None, None, None))' is an invalid key
+
+
+
 ###########################################################
 # import pandas as pd
 # df = pd.DataFrame([[1, 2], [3, 4]], columns = ['a','b'])
@@ -746,8 +963,6 @@ import pandas as pd
 #    a  b
 # 0  1  2
 # 1  3  4
-
-
 
 
 
@@ -782,4 +997,3 @@ import pandas as pd
 #    a  b
 # 1  3  4
 # 1  7  8
-
