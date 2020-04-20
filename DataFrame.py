@@ -537,6 +537,28 @@
 
 
 
+###########################################################
+# import pandas as pd
+# d = {'one' : pd.Series([1, 2, 3]),
+#      'two' : pd.Series([1, 2, 3, 4], index=['a', 'b', 'c', 'd'])}
+# d["three"] = pd.Series([5,5,5], index=['c', 'd', 'e'])
+# df = pd.DataFrame(d)
+# print(df)
+#    one  two  three
+# 0  1.0  NaN    NaN
+# 1  2.0  NaN    NaN
+# 2  3.0  NaN    NaN
+# a  NaN  1.0    NaN
+# b  NaN  2.0    NaN
+# c  NaN  3.0    5.0
+# d  NaN  4.0    5.0
+# e  NaN  NaN    5.0
+
+
+
+
+
+
 
 ###########################################################
 # import pandas as pd
