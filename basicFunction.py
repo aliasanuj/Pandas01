@@ -1,4 +1,5 @@
 #series:
+
 # axes == Returns a list of the row axis labels
 # dtype == Returns the dtype of the object.
 # empty == Returns True if series is empty.
@@ -211,6 +212,36 @@
 # import pandas as pd
 # import numpy as np
 # #Create a Dictionary of series
+# d = {'Name':pd.Series(['Tom','James','Ricky','Vin','Steve','Smith','Jack'], index=[1,2,3,4,5,6,7]),
+#    'Age':pd.Series([25,26,25,23,30,29,23], index = [43,4,5,6,7,8,9]),
+#    'Rating':pd.Series([4.23,3.24,3.98,2.56,3.20,4.6,3.8,14])}
+# #Create a DataFrame
+# df = pd.DataFrame(d)
+# print ("Our data series is:")
+# print (df)
+# Our data series is:
+#      Name   Age  Rating
+# 0     NaN   NaN    4.23
+# 1     Tom   NaN    3.24
+# 2   James   NaN    3.98
+# 3   Ricky   NaN    2.56
+# 4     Vin  26.0    3.20
+# 5   Steve  25.0    4.60
+# 6   Smith  23.0    3.80
+# 7    Jack  30.0   14.00
+# 8     NaN  29.0     NaN
+# 9     NaN  23.0     NaN
+# 43    NaN  25.0     NaN
+
+
+
+
+
+
+########################################################
+# import pandas as pd
+# import numpy as np
+# #Create a Dictionary of series
 # d = {'Name':pd.Series(['Tom','James','Ricky','Vin','Steve','Smith','Jack']),
 #    'Age':pd.Series([25,26,25,23,30,29,23]),
 #    'Rating':pd.Series([4.23,3.24,3.98,2.56,3.20,4.6,3.8,14])}
@@ -237,13 +268,19 @@
 #    'Rating':pd.Series([4.23,3.24,3.98,2.56,3.20,4.6,3.8])}
 # #Create a DataFrame
 # df = pd.DataFrame(d)
+# print(df)
 # print ("Row axis labels and column axis labels are:")
 # print(df.axes)
+#     Name  Age  Rating
+# 0    Tom   25    4.23
+# 1  James   26    3.24
+# 2  Ricky   25    3.98
+# 3    Vin   23    2.56
+# 4  Steve   30    3.20
+# 5  Smith   29    4.60
+# 6   Jack   23    3.80
 # Row axis labels and column axis labels are:
 # [RangeIndex(start=0, stop=7, step=1), Index(['Name', 'Age', 'Rating'], dtype='object')]
-#
-
-
 
 
 
@@ -269,6 +306,27 @@
 
 
 
+########################################################
+# import pandas as pd
+# import numpy as np
+# #Create a Dictionary of series
+# d = {'Name':pd.Series(['Tom','James','Ricky','Vin','Steve','Smith','Jack']),
+#    'Age':pd.Series([25,26,25,23,30,29,"aaa"]),
+#    'Rating':pd.Series([4.23,3.24,3.98,2.56,3.20,4.6,3.8])}
+# #Create a DataFrame
+# df = pd.DataFrame(d)
+# print ("The data types of each column are:")
+# print(df.dtypes)
+# The data types of each column are:
+# Name       object
+# Age        object
+# Rating    float64
+# dtype: object
+
+
+
+
+
 
 ########################################################
 # import pandas as pd
@@ -283,6 +341,7 @@
 # print(df.empty)
 # Is the object empty?
 # False
+
 
 
 
@@ -468,6 +527,3 @@
 #     Name  Age  Rating
 # 5  Smith   29     4.6
 # 6   Jack   23     3.8
-
-
-
