@@ -6,8 +6,9 @@
 
 ###############################################################
 # .loc()
-# Pandas provide various methods to have purely label based indexing. When slicing, the start
-# bound is also included. Integers are valid labels, but they refer to the label and not the position.
+# Pandas provide various methods to have purely label based indexing.
+# When slicing, the start bound is also included. Integers are valid labels,
+# but they refer to the label and not the position.
 # .loc() has multiple access methods like −
 #
 # A single scalar label
@@ -149,6 +150,36 @@
 
 
 
+
+# import pandas as pd
+# import numpy as np
+# data1 = {"marks":pd.Series([50,30,40,55,60,70,8,90]),
+#          "Age" :pd.Series([55,84,24,68,74,21,54])
+#          }
+# df = pd.DataFrame(data1)
+# print(df)
+# print(df.loc[[2,4]:"Age"])
+# TypeError: '[2, 4]' is an invalid key
+
+
+
+
+# import pandas as pd
+# import numpy as np
+# data1 = {"marks":pd.Series([50,30,40,55,60,70,8,90]),
+#          "Age" :pd.Series([55,84,24,68,74,21,54])
+#          }
+# df = pd.DataFrame(data1)
+# print(df)
+# print(df.loc[2,4:"Age"])
+# TypeError: cannot do slice indexing on <class 'pandas.core.indexes.base.Index'>
+# with these indexers [4] of <class 'int'>
+
+
+
+
+
+
 ###############################################################
 # import pandas as pd
 # import numpy as np
@@ -158,7 +189,8 @@
 # df = pd.DataFrame(data1)
 # print(df)
 # print(df.loc[2,4,6,7,10,12,14,5:"Age"])
-# TypeError: cannot do label indexing on <class 'pandas.core.indexes.base.Index'> with these indexers [4] of <class 'int'>
+# TypeError: cannot do label indexing on <class 'pandas.core.indexes.base.Index'>
+# with these indexers [4] of <class 'int'>
 
 
 
@@ -274,7 +306,36 @@
 ###############################################################
 # import pandas as pd
 # import numpy as np
-# df = pd.DataFrame(np.random.randn(8, 4), index = ['a','b','c','d','e','f','g','h'], columns = ['A', 'B', 'C', 'D'])
+# data1 = {"marks":pd.Series([50,30,40,55,60,70,8,90]),
+#          "Age" :pd.Series([55,84,24,68,74,21,54]),
+#          "speed" :pd.Series([100,200,300,68,74,21,54]),
+#          }
+# df = pd.DataFrame(data1, index=[1,2,3,4,55,66,77,88])
+# print(df)
+# print(df.loc[4:,['Age','speed']])
+#     marks   Age  speed
+# 1    30.0  84.0  200.0
+# 2    40.0  24.0  300.0
+# 3    55.0  68.0   68.0
+# 4    60.0  74.0   74.0
+# 55    NaN   NaN    NaN
+# 66    NaN   NaN    NaN
+# 77    NaN   NaN    NaN
+# 88    NaN   NaN    NaN
+#      Age  speed
+# 4   74.0   74.0
+# 55   NaN    NaN
+# 66   NaN    NaN
+# 77   NaN    NaN
+# 88   NaN    NaN
+
+
+
+###############################################################
+# import pandas as pd
+# import numpy as np
+# df = pd.DataFrame(np.random.randn(8, 4), index = ['a','b','c','d','e','f','g','h'],
+# columns = ['A', 'B', 'C', 'D'])
 # # Select few rows for multiple columns, say list[]
 # print(df.loc[['a','b','f','h'],['A','C']])
 #           A         C
@@ -361,7 +422,8 @@
 #          }
 # df = pd.DataFrame(data1)
 # print(df.loc[2:3,1:2])
-# TypeError: cannot do slice indexing on <class 'pandas.core.indexes.base.Index'> with these indexers [1] of <class 'int'>
+# TypeError: cannot do slice indexing on <class 'pandas.core.indexes.base.Index'>
+# with these indexers [1] of <class 'int'>
 
 
 
@@ -380,6 +442,51 @@
 # Name: 1, dtype: bool
 
 
+
+
+###############################################################
+# import pandas as pd
+# import numpy as np
+# data1 = {"marks":pd.Series([5,30,40,55,60,70,8,90]),
+#          "Age" :pd.Series([55,5,24,68,74,21,54]),
+#          "speed" :pd.Series([100,5,300,68,74,21,54]),
+#          }
+# df = pd.DataFrame(data1)
+# print(df.loc[0]>20)
+# marks    False
+# Age       True
+# speed     True
+# Name: 0, dtype: bool
+
+
+
+###############################################################
+# import pandas as pd
+# import numpy as np
+# data1 = {"marks":pd.Series([5,30,40,55,60,70,8,90]),
+#          "Age" :pd.Series([55,5,24,68,74,21,54]),
+#          "speed" :pd.Series([100,5,300,68,2,21,54]),
+#          }
+# df = pd.DataFrame(data1)
+# print(df.loc[8]>20)
+# KeyError: 8
+
+
+
+
+###############################################################
+# import pandas as pd
+# import numpy as np
+# data1 = {"marks":pd.Series([5,30,40,55,60,70,8,90]),
+#          "Age" :pd.Series([55,5,24,68,74,21,10]),
+#          "speed" :pd.Series([100,5,300,68,2,21,1]),
+#          }
+# df = pd.DataFrame(data1)
+# print(df.loc[7]>20)
+# marks     True
+# Age      False
+# speed    False
+# Name: 7, dtype: bool
 
 
 
@@ -561,6 +668,7 @@
 # 3     55  68.0
 
 
+
 ###############################################################
 # .ix()
 # Besides pure label based and integer based, Pandas provides a hybrid method for
@@ -580,16 +688,3 @@
 # 5  1.218508  0.465182
 # 6  2.688355  0.061993
 # 7  0.318440  0.711069
-
-
-
-
-
-
-
-
-
-
-
-
-
